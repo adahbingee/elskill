@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" horizontalGap="0"
+		 xmlns:mx="library://ns.adobe.com/flex/mx" verticalAlign="middle">
+	<fx:Script>
+		<![CDATA[
+			import mx.controls.Image;
+			public static const ARROW_DIRECTION_LEFT:String = "left";
+			public static const ARROW_DIRECTION_RIGHT:String = "right";
+			
+			[Embed(source="icons/arrow_left.png")]
+			[Bindable]
+			public var LeftArrow:Class;
+			
+			[Embed(source="icons/arrow_right.png")]
+			[Bindable]
+			public var RightArrow:Class;
+			
+			private var _arrowDirection:String;
+			public function set arrowDirection(value:String):void
+			{
+				addChild(lb);
+				_arrowDirection = value;
+				var img:Image = new Image();
+				img.width = 10;
+				img.height = 10;
+				img.scaleContent = true;
+				if(_arrowDirection == ARROW_DIRECTION_LEFT)
+				{
+					img.source = LeftArrow;
+					addChildAt(img, 0);
+				}
+				if(_arrowDirection == ARROW_DIRECTION_RIGHT)
+				{
+					img.source = RightArrow;
+					addChild(img);
+				}
+			}
+			
+			public function get arrowDirection():String
+			{
+				return _arrowDirection;
+			}
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<s:Label id="lb" backgroundColor="#BFBFBF" width="100%" height="10"/>
+	</fx:Declarations>
+</mx:HBox>

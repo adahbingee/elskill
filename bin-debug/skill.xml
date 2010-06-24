@@ -1,0 +1,2254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elskill date="20100623.2">
+    <!-- job name="職業名稱" icon="圖案位置" -->
+    <job name="狙擊者" icon="icons/job/rena.png">
+        <!-- spLevel sp="需要多少sp" -->
+        <spLevel sp="0">
+            <!-- skill name="技能名稱" icon="技能圖案位置" pre="前置技能名稱" col="位置" mp="消耗MP" cd="回復時間" -->
+            <skill name="初級魔法防禦修練" icon="icons/技能/初級魔法防禦修練.png" col="1">
+                <level>魔法防禦力+5</level>
+                <level>魔法防禦力+10</level>
+                <level>魔法防禦力+15</level>
+                <level>魔法防禦力+20</level>
+                <level>魔法防禦力+25</level>
+            </skill>
+            <skill name="魔力之箭" icon="icons/技能/魔力之箭.png" col="3" level="1" mp="100" cd="5">
+                <level>聚集魔力為箭，往前方發射貫穿一名敵人，造成魔法攻擊力的 %損害(覺醒時，可貫穿所有對象)</level>
+                <level>聚集魔力為箭，往前方發射貫穿一名敵人，造成魔法攻擊力的 %損害(覺醒時，可貫穿所有對象)</level>
+                <level>聚集魔力為箭，往前方發射貫穿一名敵人，造成魔法攻擊力的 729%損害(覺醒時，可貫穿所有對象)</level>
+                <level>聚集魔力為箭，往前方發射貫穿一名敵人，造成魔法攻擊力的 833%損害(覺醒時，可貫穿所有對象)</level>
+                <level>聚集魔力為箭，往前方發射貫穿一名敵人，造成魔法攻擊力的 %損害(覺醒時，可貫穿所有對象)</level>
+            </skill>
+            <skill name="射擊態勢" icon="icons/技能/射擊態勢.png" col="4" level="1">
+                <level>舉弓隨時往前發射箭矢Z鍵１發，X鍵３發</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="5">
+            <skill name="初級物理防禦修練" icon="icons/技能/初級物理防禦修練.png" col="0">
+                <level>物理防禦力+5</level>
+                <level>物理防禦力+10</level>
+                <level>物理防禦力+15</level>
+                <level>物理防禦力+20</level>
+                <level>物理防禦力+25</level>
+            </skill>
+            <skill name="風暴之箭" icon="icons/技能/風暴之箭.png" col="3" mp="200" cd="10">
+                <level>向前方地面射出風之箭產生龍捲風，在龍捲風內的敵人會受到魔法攻擊力 126%的連續攻擊</level>
+                <level>向前方地面射出風之箭產生龍捲風，在龍捲風內的敵人會受到魔法攻擊力 %的連續攻擊</level>
+                <level>向前方地面射出風之箭產生龍捲風，在龍捲風內的敵人會受到魔法攻擊力 %的連續攻擊</level>
+                <level>向前方地面射出風之箭產生龍捲風，在龍捲風內的敵人會受到魔法攻擊力 %的連續攻擊</level>
+                <level>向前方地面射出風之箭產生龍捲風，在龍捲風內的敵人會受到魔法攻擊力 %的連續攻擊</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="10">
+            <skill name="初級腕力修練" icon="icons/技能/初級腕力修練.png" col="0" pre="初級物理防禦修練">
+                <level>物理攻擊力+15</level>
+                <level>物理攻擊力+30</level>
+                <level>物理攻擊力+45</level>
+                <level>物理攻擊力+60</level>
+                <level>物理攻擊力+75</level>
+            </skill>
+            <skill name="流星之舞" icon="icons/技能/流星之舞.png" col="2" mp="100" cd="7">
+                <level>華麗的兩段式踢擊造成物理攻擊 %損害，並把敵人踢向空中</level>
+                <level>華麗的兩段式踢擊造成物理攻擊 %損害，並把敵人踢向空中</level>
+                <level>華麗的兩段式踢擊造成物理攻擊 %損害，並把敵人踢向空中</level>
+                <level>華麗的兩段式踢擊造成物理攻擊 %損害，並把敵人踢向空中</level>
+                <level>華麗的兩段式踢擊造成物理攻擊 555%損害，並把敵人踢向空中</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="15">
+            <skill name="初級魔力修練" icon="icons/技能/初級魔力修練.png" col="1" pre="初級魔法防禦修練">
+                <level>魔法攻擊力+15</level>
+                <level>魔法攻擊力+30</level>
+                <level>魔法攻擊力+45</level>
+                <level>魔法攻擊力+60</level>
+                <level>魔法攻擊力+75</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="20">
+            <skill name="魔力導言" icon="icons/技能/魔力導言.png" col="1" mp="70" cd="10">
+                <level>魔法攻擊力+20%，持續時間25秒</level>
+                <level>魔法攻擊力+20%，持續時間30秒</level>
+                <level>魔法攻擊力+20%，持續時間35秒</level>
+            </skill>
+            <skill name="多重箭" icon="icons/技能/多重箭.png" pre="流星之舞" col="2" mp="200" cd="10">
+                <level>持有魔法攻擊力 252%損害的強力魔法之箭發射三發，將發射到三個方向(覺醒時，可貫穿所有對象)</level>
+                <level>持有魔法攻擊力 %損害的強力魔法之箭發射三發，將發射到三個方向(覺醒時，可貫穿所有對象)</level>
+                <level>持有魔法攻擊力 %損害的強力魔法之箭發射三發，將發射到三個方向(覺醒時，可貫穿所有對象)</level>
+                <level>持有魔法攻擊力 %損害的強力魔法之箭發射三發，將發射到三個方向(覺醒時，可貫穿所有對象)</level>
+                <level>持有魔法攻擊力 %損害的強力魔法之箭發射三發，將發射到三個方向(覺醒時，可貫穿所有對象)</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="25">
+            <skill name="攻擊導言" icon="icons/技能/攻擊導言.png" col="0" mp="70" cd="10" pre="初級腕力修練">
+                <level>物理攻擊力+20%，持續時間25秒</level>
+                <level>物理攻擊力+20%，持續時間30秒</level>
+                <level>物理攻擊力+20%，持續時間35秒</level>
+                ></skill>
+            <skill name="防禦導言" icon="icons/技能/防禦導言.png" col="1" mp="70" cd="10">
+                <level>物理和魔法防禦力+40%，持續時間25秒</level>
+                <level>物理和魔法防禦力+40%，持續時間30秒</level>
+                <level>物理和魔法防禦力+40%，持續時間35秒</level>
+            </skill>
+            <skill name="射擊態勢強化" icon="icons/技能/射擊態勢強化.png" pre="射擊態勢" col="4">
+                <level>射擊態勢所需時間減少20%，射擊態勢弓箭所需的魔法減少 %，每發攻擊力增加</level>
+                <level>射擊態勢所需時間減少25%，射擊態勢弓箭所需的魔法減少 %，每發攻擊力增加</level>
+                <level>射擊態勢所需時間減少30%，射擊態勢弓箭所需的魔法減少 30%，每發攻擊力增加 30%</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="30">
+            <skill name="鳳凰衝擊" icon="icons/技能/鳳凰衝擊.png" col="2" mp="300" cd="30">
+                <level>招喚鳳凰之箭，將前方的所有敵人剷除擊退，造成魔發攻擊力 865%的攻擊，被攻擊者額外增加10秒的持續性火焰傷害(火焰傷害隨角色等級高低而不同)</level>
+                <level>招喚鳳凰之箭，將前方的所有敵人剷除擊退，造成魔發攻擊力 %的攻擊，被攻擊者額外增加10秒的持續性火焰傷害(火焰傷害隨角色等級高低而不同)</level>
+                <level>招喚鳳凰之箭，將前方的所有敵人剷除擊退，造成魔發攻擊力 %的攻擊，被攻擊者額外增加10秒的持續性火焰傷害(火焰傷害隨角色等級高低而不同)</level>
+                <level>招喚鳳凰之箭，將前方的所有敵人剷除擊退，造成魔發攻擊力 %的攻擊，被攻擊者額外增加10秒的持續性火焰傷害(火焰傷害隨角色等級高低而不同)</level>
+                <level>招喚鳳凰之箭，將前方的所有敵人剷除擊退，造成魔發攻擊力 %的攻擊，被攻擊者額外增加10秒的持續性火焰傷害(火焰傷害隨角色等級高低而不同)</level>
+            </skill>
+            <skill name="暴風空間" icon="icons/技能/暴風空間.png" col="3" mp="300" cd="30">
+                <level>往後翻滾一圈發射風之箭，製作圓形的龍捲風使範圍內的敵人以魔法攻擊力 %連續攻擊(覺醒時，以一定的時間產生在原位置轉圈的魔法攻擊力 %損害之箭)</level>
+                <level>往後翻滾一圈發射風之箭，製作圓形的龍捲風使範圍內的敵人以魔法攻擊力 %連續攻擊(覺醒時，以一定的時間產生在原位置轉圈的魔法攻擊力 %損害之箭)</level>
+                <level>往後翻滾一圈發射風之箭，製作圓形的龍捲風使範圍內的敵人以魔法攻擊力 %連續攻擊(覺醒時，以一定的時間產生在原位置轉圈的魔法攻擊力 %損害之箭)</level>
+                <level>往後翻滾一圈發射風之箭，製作圓形的龍捲風使範圍內的敵人以魔法攻擊力 %連續攻擊(覺醒時，以一定的時間產生在原位置轉圈的魔法攻擊力 %損害之箭)</level>
+                <level>往後翻滾一圈發射風之箭，製作圓形的龍捲風使範圍內的敵人以魔法攻擊力 452%連續攻擊(覺醒時，以一定的時間產生在原位置轉圈的魔法攻擊力 192%損害之箭)</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="35">
+            <skill name="花瓣之舞" icon="icons/技能/花瓣之舞.png" col="4" mp="20" cd="6">
+                <level>施展時向後跳以45度，發射魔法攻擊力的 %傷害的 3發弓箭</level>
+                <level>施展時向後跳以45度，發射魔法攻擊力的 %傷害的 3發弓箭</level>
+                <level>施展時向後跳以45度，發射魔法攻擊力的 170%傷害的 3發弓箭</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="40">
+            <skill name="種子陷阱" icon="icons/技能/種子陷阱.png" col="2" mp="50" cd="7">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+            <skill name="虛無空間" icon="icons/技能/虛無空間.png" col="3" mp="100" cd="5">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="45">
+            <skill name="中級腕力修練" icon="icons/技能/中級腕力修練.png" col="0">
+                <level>物理攻擊力+30</level>
+                <level>物理攻擊力+60</level>
+                <level>物理攻擊力+90</level>
+            </skill>
+            <skill name="中級魔力修練" icon="icons/技能/中級魔力修練.png" col="1">
+                <level>魔法攻擊力+30</level>
+                <level>魔法攻擊力+60</level>
+                <level>魔法攻擊力+90</level>
+                <level>魔法攻擊力+120</level>
+                <level>魔法攻擊力+150</level>
+            </skill>
+            <skill name="穿透" icon="icons/技能/穿透.png" col="2">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="50">
+            <skill name="導引箭" icon="icons/技能/導引箭.png" col="3" pre="虛無空間" mp="200" cd="10">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="55">
+            <skill name="武神契約" icon="icons/技能/武神契約.png" col="0" pre="中級腕力修練" mp="200" cd="10">
+                <level>10秒內物理攻擊力+30%</level>
+                <level>10秒內物理攻擊力+35%</level>
+                <level>10秒內物理攻擊力+40%</level>
+            </skill>
+            <skill name="魔力契約" icon="icons/技能/魔力契約.png" col="1" pre="中級魔力修練" mp="200" cd="10">
+                <level>10秒內魔法攻擊力+30%</level>
+                <level>10秒內魔法攻擊力+35%</level>
+                <level>10秒內魔法攻擊力+40%</level>
+                <level>10秒內魔法攻擊力+45%</level>
+                <level>10秒內魔法攻擊力+50%</level>
+            </skill>
+            <skill name="狙擊信念" icon="icons/技能/狙擊信念.png" col="2">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+            <skill name="飛天之舞" icon="icons/技能/飛天之舞.png" col="4" mp="30" cd="6">
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="60">
+            <skill name="颶風圍籬" icon="icons/技能/颶風圍籬.png" col="2" mp="200" cd="10">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+            <skill name="鷹眼" icon="icons/技能/鷹眼.png" col="4">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="65">
+            <skill name="流星箭雨" icon="icons/技能/流星箭雨.png" col="2" mp="300" cd="30">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+            <skill name="瘋狂空間" icon="icons/技能/瘋狂空間.png" col="3" mp="300" cd="30">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+    </job>
+    <job name="衝鋒者" icon="icons/job/rena2.png">
+        <spLevel sp="0">
+            <skill name="初級魔法防禦修練" icon="icons/技能/初級魔法防禦修練.png" col="1">
+                <level>魔法防禦力+5</level>
+                <level>魔法防禦力+10</level>
+                <level>魔法防禦力+15</level>
+                <level>魔法防禦力+20</level>
+                <level>魔法防禦力+25</level>
+            </skill>
+            <skill name="魔力之箭" icon="icons/技能/魔力之箭.png" col="3" level="1" mp="100" cd="5">
+                <level>聚集魔力為箭，往前方發射貫穿一名敵人，造成魔法攻擊力的 %損害(覺醒時，可貫穿所有對象)</level>
+                <level>聚集魔力為箭，往前方發射貫穿一名敵人，造成魔法攻擊力的 %損害(覺醒時，可貫穿所有對象)</level>
+                <level>聚集魔力為箭，往前方發射貫穿一名敵人，造成魔法攻擊力的 729%損害(覺醒時，可貫穿所有對象)</level>
+                <level>聚集魔力為箭，往前方發射貫穿一名敵人，造成魔法攻擊力的 833%損害(覺醒時，可貫穿所有對象)</level>
+                <level>聚集魔力為箭，往前方發射貫穿一名敵人，造成魔法攻擊力的 %損害(覺醒時，可貫穿所有對象)</level>
+            </skill>
+            <skill name="射擊態勢" icon="icons/技能/射擊態勢.png" col="4" level="1">
+                <level>舉弓隨時往前發射箭矢Z鍵１發，X鍵３發</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="5">
+            <skill name="初級物理防禦修練" icon="icons/技能/初級物理防禦修練.png" col="0">
+                <level>物理防禦力+5</level>
+                <level>物理防禦力+10</level>
+                <level>物理防禦力+15</level>
+                <level>物理防禦力+20</level>
+                <level>物理防禦力+25</level>
+            </skill>
+            <skill name="風暴之箭" icon="icons/技能/風暴之箭.png" col="3" mp="200" cd="10">
+                <level>向前方地面射出風之箭產生龍捲風，在龍捲風內的敵人會受到魔法攻擊力 126%的連續攻擊</level>
+                <level>向前方地面射出風之箭產生龍捲風，在龍捲風內的敵人會受到魔法攻擊力 %的連續攻擊</level>
+                <level>向前方地面射出風之箭產生龍捲風，在龍捲風內的敵人會受到魔法攻擊力 %的連續攻擊</level>
+                <level>向前方地面射出風之箭產生龍捲風，在龍捲風內的敵人會受到魔法攻擊力 %的連續攻擊</level>
+                <level>向前方地面射出風之箭產生龍捲風，在龍捲風內的敵人會受到魔法攻擊力 %的連續攻擊</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="10">
+            <skill name="初級腕力修練" icon="icons/技能/初級腕力修練.png" col="0" pre="初級物理防禦修練">
+                <level>物理攻擊力+15</level>
+                <level>物理攻擊力+30</level>
+                <level>物理攻擊力+45</level>
+                <level>物理攻擊力+60</level>
+                <level>物理攻擊力+75</level>
+            </skill>
+            <skill name="流星之舞" icon="icons/技能/流星之舞.png" col="2" mp="100" cd="7">
+                <level>華麗的兩段式踢擊造成物理攻擊 %損害，並把敵人踢向空中</level>
+                <level>華麗的兩段式踢擊造成物理攻擊 %損害，並把敵人踢向空中</level>
+                <level>華麗的兩段式踢擊造成物理攻擊 %損害，並把敵人踢向空中</level>
+                <level>華麗的兩段式踢擊造成物理攻擊 %損害，並把敵人踢向空中</level>
+                <level>華麗的兩段式踢擊造成物理攻擊 555%損害，並把敵人踢向空中</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="15">
+            <skill name="初級魔力修練" icon="icons/技能/初級魔力修練.png" col="1" pre="初級魔法防禦修練">
+                <level>魔法攻擊力+15</level>
+                <level>魔法攻擊力+30</level>
+                <level>魔法攻擊力+45</level>
+                <level>魔法攻擊力+60</level>
+                <level>魔法攻擊力+75</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="20">
+            <skill name="魔力導言" icon="icons/技能/魔力導言.png" col="1" mp="70" cd="10">
+                <level>魔法攻擊力+20%，持續時間25秒</level>
+                <level>魔法攻擊力+20%，持續時間30秒</level>
+                <level>魔法攻擊力+20%，持續時間35秒</level>
+            </skill>
+            <skill name="多重箭" icon="icons/技能/多重箭.png" pre="流星之舞" col="2" mp="200" cd="10">
+                <level>持有魔法攻擊力 252%損害的強力魔法之箭發射三發，將發射到三個方向(覺醒時，可貫穿所有對象)</level>
+                <level>持有魔法攻擊力 %損害的強力魔法之箭發射三發，將發射到三個方向(覺醒時，可貫穿所有對象)</level>
+                <level>持有魔法攻擊力 %損害的強力魔法之箭發射三發，將發射到三個方向(覺醒時，可貫穿所有對象)</level>
+                <level>持有魔法攻擊力 %損害的強力魔法之箭發射三發，將發射到三個方向(覺醒時，可貫穿所有對象)</level>
+                <level>持有魔法攻擊力 %損害的強力魔法之箭發射三發，將發射到三個方向(覺醒時，可貫穿所有對象)</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="25">
+            <skill name="攻擊導言" icon="icons/技能/攻擊導言.png" col="0" mp="70" cd="10" pre="初級腕力修練">
+                <level>物理攻擊力+20%，持續時間25秒</level>
+                <level>物理攻擊力+20%，持續時間30秒</level>
+                <level>物理攻擊力+20%，持續時間35秒</level>
+                ></skill>
+            <skill name="防禦導言" icon="icons/技能/防禦導言.png" col="1" mp="70" cd="10">
+                <level>物理和魔法防禦力+40%，持續時間25秒</level>
+                <level>物理和魔法防禦力+40%，持續時間30秒</level>
+                <level>物理和魔法防禦力+40%，持續時間35秒</level>
+            </skill>
+            <skill name="射擊態勢強化" icon="icons/技能/射擊態勢強化.png" pre="射擊態勢" col="4">
+                <level>射擊態勢所需時間減少20%，射擊態勢弓箭所需的魔法減少 %，每發攻擊力增加</level>
+                <level>射擊態勢所需時間減少25%，射擊態勢弓箭所需的魔法減少 %，每發攻擊力增加</level>
+                <level>射擊態勢所需時間減少30%，射擊態勢弓箭所需的魔法減少 30%，每發攻擊力增加 30%</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="30">
+            <skill name="鳳凰衝擊" icon="icons/技能/鳳凰衝擊.png" col="2" mp="300" cd="30">
+                <level>招喚鳳凰之箭，將前方的所有敵人剷除擊退，造成魔發攻擊力 865%的攻擊，被攻擊者額外增加10秒的持續性火焰傷害(火焰傷害隨角色等級高低而不同)</level>
+                <level>招喚鳳凰之箭，將前方的所有敵人剷除擊退，造成魔發攻擊力 %的攻擊，被攻擊者額外增加10秒的持續性火焰傷害(火焰傷害隨角色等級高低而不同)</level>
+                <level>招喚鳳凰之箭，將前方的所有敵人剷除擊退，造成魔發攻擊力 %的攻擊，被攻擊者額外增加10秒的持續性火焰傷害(火焰傷害隨角色等級高低而不同)</level>
+                <level>招喚鳳凰之箭，將前方的所有敵人剷除擊退，造成魔發攻擊力 %的攻擊，被攻擊者額外增加10秒的持續性火焰傷害(火焰傷害隨角色等級高低而不同)</level>
+                <level>招喚鳳凰之箭，將前方的所有敵人剷除擊退，造成魔發攻擊力 %的攻擊，被攻擊者額外增加10秒的持續性火焰傷害(火焰傷害隨角色等級高低而不同)</level>
+            </skill>
+            <skill name="暴風空間" icon="icons/技能/暴風空間.png" col="3" mp="300" cd="30">
+                <level>往後翻滾一圈發射風之箭，製作圓形的龍捲風使範圍內的敵人以魔法攻擊力 %連續攻擊(覺醒時，以一定的時間產生在原位置轉圈的魔法攻擊力 %損害之箭)</level>
+                <level>往後翻滾一圈發射風之箭，製作圓形的龍捲風使範圍內的敵人以魔法攻擊力 %連續攻擊(覺醒時，以一定的時間產生在原位置轉圈的魔法攻擊力 %損害之箭)</level>
+                <level>往後翻滾一圈發射風之箭，製作圓形的龍捲風使範圍內的敵人以魔法攻擊力 %連續攻擊(覺醒時，以一定的時間產生在原位置轉圈的魔法攻擊力 %損害之箭)</level>
+                <level>往後翻滾一圈發射風之箭，製作圓形的龍捲風使範圍內的敵人以魔法攻擊力 %連續攻擊(覺醒時，以一定的時間產生在原位置轉圈的魔法攻擊力 %損害之箭)</level>
+                <level>往後翻滾一圈發射風之箭，製作圓形的龍捲風使範圍內的敵人以魔法攻擊力 452%連續攻擊(覺醒時，以一定的時間產生在原位置轉圈的魔法攻擊力 192%損害之箭)</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="35">
+            <skill name="花瓣之舞" icon="icons/技能/花瓣之舞.png" col="4" mp="20" cd="6">
+                <level>施展時向後跳以45度，發射魔法攻擊力的 %傷害的 3發弓箭</level>
+                <level>施展時向後跳以45度，發射魔法攻擊力的 %傷害的 3發弓箭</level>
+                <level>施展時向後跳以45度，發射魔法攻擊力的 170%傷害的 3發弓箭</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="40">
+            <skill name="毒蛇之舞" icon="icons/技能/毒蛇之舞.png" col="2" mp="100">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+            <skill name="斷筋" icon="icons/技能/斷筋.png" col="3">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="45">
+            <skill name="中級魔力修練" icon="icons/技能/中級魔力修練.png" col="0">
+                <level>魔法攻擊力+30</level>
+                <level>魔法攻擊力+60</level>
+                <level>魔法攻擊力+90</level>
+            </skill>
+            <skill name="中級腕力修練" icon="icons/技能/中級腕力修練.png" col="1">
+                <level>物理攻擊力+30</level>
+                <level>物理攻擊力+60</level>
+                <level>物理攻擊力+90</level>
+                <level>物理攻擊力+120</level>
+                <level>物理攻擊力+150</level>
+            </skill>
+            <skill name="衝鋒步伐" icon="icons/技能/衝鋒步伐.png" col="3">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="50">
+            <skill name="月夜之舞" icon="icons/技能/月夜之舞.png" col="2">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="55">
+            <skill name="魔力契約" icon="icons/技能/魔力契約.png" col="0" pre="中級魔力修練" mp="100" cd="10">
+                <level>10秒內魔法攻擊力+30%</level>
+                <level>10秒內魔法攻擊力+35%</level>
+                <level>10秒內魔法攻擊力+40%</level>
+            </skill>
+            <skill name="武神契約" icon="icons/技能/武神契約.png" col="1" pre="中級腕力修練" mp="100" cd="10">
+                <level>10秒內物理攻擊力+30%</level>
+                <level>10秒內物理攻擊力+35%</level>
+                <level>10秒內物理攻擊力+40%</level>
+                <level>10秒內物理攻擊力+45%</level>
+                <level>10秒內物理攻擊力+50%</level>
+            </skill>
+            <skill name="武鬥之魂" icon="icons/技能/武鬥之魂.png" col="3">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+            <skill name="飛天之舞" icon="icons/技能/飛天之舞.png" col="4" mp="30" cd="6">
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="60">
+            <skill name="不屈" icon="icons/技能/不屈.png" col="1">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+            <skill name="地動之舞" icon="icons/技能/地動之舞.png" col="3" mp="200">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="65">
+            <skill name="狂性之舞" icon="icons/技能/狂性之舞.png" col="2" mp="300" cd="30">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+            <skill name="新月之舞" icon="icons/技能/新月之舞.png" col="3" mp="300" cd="30">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+    </job>
+    <job name="高階魔導" icon="icons/job/aisha.png">
+        <spLevel sp="0">
+            <skill name="初級魔法防禦修練" icon="icons/技能/初級魔法防禦修練.png" col="0">
+                <level>魔法防禦力+5</level>
+                <level>魔法防禦力+10</level>
+                <level>魔法防禦力+15</level>
+                <level>魔法防禦力+20</level>
+                <level>魔法防禦力+25</level>
+            </skill>
+            <skill name="火焰打擊" icon="icons/技能/火焰打擊.png" col="2" level="1" mp="100" cd="3">
+                <level>魔法攻擊133%、133%、175%附加10秒燒傷</level>
+                <level>魔法攻擊160%、160%、210%附加10秒燒傷</level>
+                <level>魔法攻擊186%、186%、245%附加10秒燒傷</level>
+                <level>魔法攻擊213%、213%、280%附加10秒燒傷</level>
+                <level>魔法攻擊253%、253%、333%附加10秒燒傷</level>
+            </skill>
+            <skill name="傳送" icon="icons/技能/傳送.png" col="4" level="1">
+                <level>可以瞬間移動到一定的地點</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="5">
+            <skill name="初級物理防禦修練" icon="icons/技能/初級物理防禦修練.png" col="1">
+                <level>物理防禦力+5</level>
+                <level>物理防禦力+10</level>
+                <level>物理防禦力+15</level>
+                <level>物理防禦力+20</level>
+                <level>物理防禦力+25</level>
+            </skill>
+            <skill name="火焰之柱" icon="icons/技能/火焰之柱.png" col="2" mp="200" cd="10">
+                <level>魔法攻擊147%X6</level>
+                <level>魔法攻擊176%X6</level>
+                <level>魔法攻擊206%X6</level>
+                <level>魔法攻擊235%X6</level>
+                <level>魔法攻擊279%X6</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="10">
+            <skill name="初級魔力修練" icon="icons/技能/初級魔力修練.png" col="0" pre="初級魔法防禦修練">
+                <level>魔法攻擊力+15</level>
+                <level>魔法攻擊力+15</level>
+                <level>魔法攻擊力+15</level>
+                <level>魔法攻擊力+15</level>
+                <level>魔法攻擊力+15</level>
+            </skill>
+            <skill name="連環閃電" icon="icons/技能/連環閃電.png" col="3" mp="200" cd="10">
+                <level>魔法攻擊55%X20</level>
+                <level>魔法攻擊66%X20</level>
+                <level>魔法攻擊76%X20</level>
+                <level>魔法攻擊87%X20</level>
+                <level>魔法攻擊104%X20</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="15">
+            <skill name="法力光環" icon="icons/技能/法力光環.png" col="0" mp="70" cd="10">
+                <level>魔法攻擊力+20，持續時間25秒</level>
+                <level>魔法攻擊力+20，持續時間30秒</level>
+                <level>魔法攻擊力+20，持續時間35秒</level>
+                <level>魔法攻擊力+20，持續時間40秒</level>
+                <level>魔法攻擊力+20，持續時間45秒</level>
+            </skill>
+            <skill name="初級腕力修練" icon="icons/技能/初級腕力修練.png" col="1" pre="初級物理防禦修練">
+                <level>物理攻擊力+15</level>
+                <level>物理攻擊力+30</level>
+                <level>物理攻擊力+45</level>
+                <level>物理攻擊力+60</level>
+                <level>物理攻擊力+75</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="20">
+            <skill name="護盾光環" icon="icons/技能/護盾光環.png" col="1" mp="70" cd="10">
+                <level>物理和魔法防禦力+40%，持續25秒</level>
+                <level>物理和魔法防禦力+40%，持續30秒</level>
+                <level>物理和魔法防禦力+40%，持續35秒</level>
+                <level>物理和魔法防禦力+40%，持續40秒</level>
+                <level>物理和魔法防禦力+40%，持續45秒</level>
+            </skill>
+            <skill name="約束之環" icon="icons/技能/約束之環.png" pre="連環閃電" col="3" mp="120" cd="10">
+                <level>半徑5公尺停止敵人行動3秒</level>
+                <level>半徑5.5公尺停止敵人行動3秒</level>
+                <level>半徑6公尺停止敵人行動3秒</level>
+                <level>半徑6.5公尺停止敵人行動3秒</level>
+                <level>半徑7公尺停止敵人行動3秒</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="25">
+            <skill name="鼓舞光環" icon="icons/技能/鼓舞光環.png" col="1" mp="70" cd="10">
+                <level>物理攻擊力+20%，持續25秒</level>
+                <level>物理攻擊力+20%，持續30秒</level>
+                <level>物理攻擊力+20%，持續35秒</level>
+                <level>物理攻擊力+20%，持續40秒</level>
+                <level>物理攻擊力+20%，持續45秒</level>
+            </skill>
+            <skill name="傳送強化" icon="icons/技能/傳送強化.png" pre="傳送" col="4">
+                <level>傳送mp消耗量減少10%</level>
+                <level>傳送mp消耗量減少20%</level>
+                <level>傳送mp消耗量減少30%</level>
+                <level>傳送mp消耗量減少40%</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="30">
+            <skill name="火焰之壁" icon="icons/技能/火焰之壁.png" pre="火焰之柱" col="2" mp="300" cd="30">
+                <level>魔法攻擊101~118%X22</level>
+                <level>魔法攻擊121~141%X22</level>
+                <level>魔法攻擊141~165%X22</level>
+                <level>魔法攻擊161~188%X22</level>
+                <level>魔法攻擊192~223%X22</level>
+            </skill>
+            <skill name="招喚隕石" icon="icons/技能/招喚隕石.png" col="3" mp="270" cd="25">
+                <level>魔法攻擊84%X7+魔法攻擊161%X7</level>
+                <level>魔法攻擊101%X7+魔法攻擊193%X7</level>
+                <level>魔法攻擊118%X7+魔法攻擊225%X7</level>
+                <level>魔法攻擊134%X7+魔法攻擊258%X7</level>
+                <level>魔法攻擊160%X7+魔法攻擊306%X7</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="35">
+            <skill name="魔法護盾" icon="icons/技能/魔法護盾.png" col="4" mp="20" cd="15">
+                <level>15秒內抵擋4次攻擊的40%傷害</level>
+                <level>15秒內抵擋5次攻擊的50%傷害</level>
+                <level>15秒內抵擋6次攻擊的60%傷害</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="40">
+            <skill name="火焰之戀" icon="icons/技能/火焰之戀.png" col="2" mp="100" cd="5">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+            <skill name="心靈淨化" icon="icons/技能/冥想c.png" col="3">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="45">
+            <skill name="中級魔力修練" icon="icons/技能/中級魔力修練.png" col="1" >
+                <level>魔法攻擊力+30</level>
+                <level>魔法攻擊力+60</level>
+                <level>魔法攻擊力+90</level>
+                <level>魔法攻擊力+120</level>
+                <level>魔法攻擊力+150</level>
+            </skill>
+            <skill name="火焰強化" icon="icons/技能/火球強化.png" col="2">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="50">
+            <skill name="魔法導彈" icon="icons/技能/魔法導彈.png" col="2" mp="200" cd="10">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="55">
+            <skill name="魔力契約" icon="icons/技能/魔力契約.png" col="1" pre="中級魔力修練" mp="100" cd="10">
+                <level>10秒內魔法攻擊力+30%</level>
+                <level>10秒內魔法攻擊力+35%</level>
+                <level>10秒內魔法攻擊力+40%</level>
+                <level>10秒內魔法攻擊力+45%</level>
+                <level>10秒內魔法攻擊力+50%</level>
+            </skill>
+            <skill name="光環強化" icon="icons/技能/光環強化.png" col="2">
+                <level>光環mp消耗量減少6%，持續時間增加2秒</level>
+                <level>光環mp消耗量減少12%，持續時間增加4秒</level>
+                <level>光環mp消耗量減少18%，持續時間增加6秒</level>
+                <level>光環mp消耗量減少24%，持續時間增加8秒</level>
+                <level>光環mp消耗量減少30%，持續時間增加10秒</level>
+            </skill>
+            <skill name="火焰之環" icon="icons/技能/火焰之環.png" col="4" mp="40">
+                <level>魔法攻擊力100%</level>
+                <level>魔法攻擊力110%</level>
+                <level>魔法攻擊力120%</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="60">
+            <skill name="魔力之河" icon="icons/技能/魔力之河.png" col="1" >
+                <level>mp最大值+20</level>
+                <level>mp最大值+40</level>
+                <level>mp最大值+60</level>
+                <level>mp最大值+80</level>
+                <level>mp最大值+100</level>
+            </skill>
+            <skill name="絕對零度" icon="icons/技能/暴雪光浴C.png" col="3" mp="200">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="65">
+            <skill name="雷霆熱浪" icon="icons/技能/雷霆熱浪.png" col="2" mp="250" cd="23">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+            <skill name="烈焰之輪" icon="icons/技能/烈焰之徑C.png" col="3">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+    </job>
+    <job name="暗黑術士" icon="icons/job/aisha2.png">
+        <spLevel sp="0">
+            <skill name="初級魔法防禦修練" icon="icons/技能/初級魔法防禦修練.png" col="0">
+                <level>魔法防禦力+5</level>
+                <level>魔法防禦力+10</level>
+                <level>魔法防禦力+15</level>
+                <level>魔法防禦力+20</level>
+                <level>魔法防禦力+25</level>
+            </skill>
+            <skill name="火焰打擊" icon="icons/技能/火焰打擊.png" col="2" level="1" mp="100" cd="3">
+                <level>魔法攻擊133%、133%、175%附加10秒燒傷</level>
+                <level>魔法攻擊160%、160%、210%附加10秒燒傷</level>
+                <level>魔法攻擊186%、186%、245%附加10秒燒傷</level>
+                <level>魔法攻擊213%、213%、280%附加10秒燒傷</level>
+                <level>魔法攻擊253%、253%、333%附加10秒燒傷</level>
+            </skill>
+            <skill name="傳送" icon="icons/技能/傳送.png" col="4" level="1">
+                <level>可以瞬間移動到一定的地點</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="5">
+            <skill name="初級物理防禦修練" icon="icons/技能/初級物理防禦修練.png" col="1">
+                <level>物理防禦力+5</level>
+                <level>物理防禦力+10</level>
+                <level>物理防禦力+15</level>
+                <level>物理防禦力+20</level>
+                <level>物理防禦力+25</level>
+            </skill>
+            <skill name="火焰之柱" icon="icons/技能/火焰之柱.png" col="2" mp="200" cd="10">
+                <level>魔法攻擊147%X6</level>
+                <level>魔法攻擊176%X6</level>
+                <level>魔法攻擊206%X6</level>
+                <level>魔法攻擊235%X6</level>
+                <level>魔法攻擊279%X6</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="10">
+            <skill name="初級魔力修練" icon="icons/技能/初級魔力修練.png" col="0" pre="初級魔法防禦修練">
+                <level>魔法攻擊力+15</level>
+                <level>魔法攻擊力+15</level>
+                <level>魔法攻擊力+15</level>
+                <level>魔法攻擊力+15</level>
+                <level>魔法攻擊力+15</level>
+            </skill>
+            <skill name="連環閃電" icon="icons/技能/連環閃電.png" col="3" mp="200" cd="10">
+                <level>魔法攻擊55%X20</level>
+                <level>魔法攻擊66%X20</level>
+                <level>魔法攻擊76%X20</level>
+                <level>魔法攻擊87%X20</level>
+                <level>魔法攻擊104%X20</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="15">
+            <skill name="法力光環" icon="icons/技能/法力光環.png" col="0" mp="70" cd="10">
+                <level>魔法攻擊力+20，持續時間25秒</level>
+                <level>魔法攻擊力+20，持續時間30秒</level>
+                <level>魔法攻擊力+20，持續時間35秒</level>
+                <level>魔法攻擊力+20，持續時間40秒</level>
+                <level>魔法攻擊力+20，持續時間45秒</level>
+            </skill>
+            <skill name="初級腕力修練" icon="icons/技能/初級腕力修練.png" col="1" pre="初級物理防禦修練">
+                <level>物理攻擊力+15</level>
+                <level>物理攻擊力+30</level>
+                <level>物理攻擊力+45</level>
+                <level>物理攻擊力+60</level>
+                <level>物理攻擊力+75</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="20">
+            <skill name="護盾光環" icon="icons/技能/護盾光環.png" col="1" mp="70" cd="10">
+                <level>物理和魔法防禦力+40%，持續25秒</level>
+                <level>物理和魔法防禦力+40%，持續30秒</level>
+                <level>物理和魔法防禦力+40%，持續35秒</level>
+                <level>物理和魔法防禦力+40%，持續40秒</level>
+                <level>物理和魔法防禦力+40%，持續45秒</level>
+            </skill>
+            <skill name="約束之環" icon="icons/技能/約束之環.png" pre="連環閃電" col="3" mp="120" cd="10">
+                <level>半徑5公尺停止敵人行動3秒</level>
+                <level>半徑5.5公尺停止敵人行動3秒</level>
+                <level>半徑6公尺停止敵人行動3秒</level>
+                <level>半徑6.5公尺停止敵人行動3秒</level>
+                <level>半徑7公尺停止敵人行動3秒</level>
+                ></skill>
+        </spLevel>
+        <spLevel sp="25">
+            <skill name="鼓舞光環" icon="icons/技能/鼓舞光環.png" col="1" mp="70" cd="10">
+                <level>物理攻擊力+20%，持續25秒</level>
+                <level>物理攻擊力+20%，持續30秒</level>
+                <level>物理攻擊力+20%，持續35秒</level>
+                <level>物理攻擊力+20%，持續40秒</level>
+                <level>物理攻擊力+20%，持續45秒</level>
+            </skill>
+            <skill name="傳送強化" icon="icons/技能/傳送強化.png" pre="傳送" col="4">
+                <level>傳送mp消耗量減少10%</level>
+                <level>傳送mp消耗量減少20%</level>
+                <level>傳送mp消耗量減少30%</level>
+                <level>傳送mp消耗量減少40%</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="30">
+            <skill name="火焰之壁" icon="icons/技能/火焰之壁.png" pre="火焰之柱" col="2" mp="300" cd="30">
+                <level>魔法攻擊101~118%X22</level>
+                <level>魔法攻擊121~141%X22</level>
+                <level>魔法攻擊141~165%X22</level>
+                <level>魔法攻擊161~188%X22</level>
+                <level>魔法攻擊192~223%X22</level>
+            </skill>
+            <skill name="招喚隕石" icon="icons/技能/招喚隕石.png" col="3" mp="270" cd="25">
+                <level>魔法攻擊84%X7+魔法攻擊161%X7</level>
+                <level>魔法攻擊101%X7+魔法攻擊193%X7</level>
+                <level>魔法攻擊118%X7+魔法攻擊225%X7</level>
+                <level>魔法攻擊134%X7+魔法攻擊258%X7</level>
+                <level>魔法攻擊160%X7+魔法攻擊306%X7</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="35">
+            <skill name="魔法護盾" icon="icons/技能/魔法護盾.png" col="4" mp="20" cd="15">
+                <level>15秒內抵擋4次攻擊的40%傷害</level>
+                <level>15秒內抵擋5次攻擊的50%傷害</level>
+                <level>15秒內抵擋6次攻擊的60%傷害</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="40">
+            <skill name="魔力吸收" icon="icons/技能/魔力吸取C.png" col="2" mp="10" cd="10">
+                <level>魔力吸收量6</level>
+                <level>魔力吸收量12</level>
+                <level>魔力吸收量18</level>
+                <level>魔力吸收量24</level>
+                <level>魔力吸收量30</level>
+            </skill>
+            <skill name="地獄之石" icon="icons/技能/地獄之石.png" col="3" mp="120" cd="6">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="45">
+            <skill name="屏氣凝神" icon="icons/技能/屏氣凝神.png" col="1">
+                <level>魔法攻擊力隨著物理攻擊力增加1%</level>
+                <level>魔法攻擊力隨著物理攻擊力增加2%</level>
+                <level>魔法攻擊力隨著物理攻擊力增加3%</level>
+                <level>魔法攻擊力隨著物理攻擊力增加4%</level>
+                <level>魔法攻擊力隨著物理攻擊力增加5%</level>
+            </skill>
+            <skill name="中級腕力修練" icon="icons/技能/中級腕力修練.png" col="2">
+                <level>物理攻擊力+30</level>
+                <level>物理攻擊力+60</level>
+                <level>物理攻擊力+90</level>
+                <level>物理攻擊力+120</level>
+                <level>物理攻擊力+150</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="50">
+            <skill name="黑暗之霧" icon="icons/技能/黑暗之霧.png" col="3" mp="200" cd="30">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="55">
+            <skill name="魔力契約" icon="icons/技能/魔力契約.png" col="1" pre="屏氣凝神" mp="100" cd="10">
+                <level>10秒內魔法攻擊力+30%</level>
+                <level>10秒內魔法攻擊力+35%</level>
+                <level>10秒內魔法攻擊力+40%</level>
+            </skill>
+            <skill name="死亡之眼" icon="icons/技能/死亡之眼.png" col="2">
+                <level>無視防禦力1%</level>
+                <level>無視防禦力2%</level>
+                <level>無視防禦力3%</level>
+                <level>無視防禦力4%</level>
+                <level>無視防禦力5%</level>
+            </skill>
+            <skill name="火焰之環" icon="icons/技能/火焰之環.png" col="4" mp="30" cd="6">
+                <level>魔法攻擊力100%</level>
+                <level>魔法攻擊力110%</level>
+                <level>魔法攻擊力120%</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="60">
+            <skill name="疾走" icon="icons/技能/疾走.png" col="1">
+                <level>移動速度+2%</level>
+                <level>移動速度+4%</level>
+                <level>移動速度+6%</level>
+                <level>移動速度+8%</level>
+                <level>移動速度+10%</level>
+            </skill>
+            <skill name="死亡宣言" icon="icons/技能/死神陰影C.png" col="2" mp="200" cd="30">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="65">
+            <skill name="惡靈轟炸" icon="icons/技能/衰弱爆彈C.png" col="2" mp="300" cd="30">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+            <skill name="等離子切割" icon="icons/技能/等離子切割.png" col="3" mp="300" cd="30">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+    </job>
+    <job name="鍊金師" icon="icons/job/eve.png">
+        <spLevel sp="0">
+            <skill name="初級魔法防禦修練" icon="icons/技能/初級魔法防禦修練.png" col="0">
+                <level>魔法防禦力+5</level>
+                <level>魔法防禦力+10</level>
+                <level>魔法防禦力+15</level>
+                <level>魔法防禦力+20</level>
+                <level>魔法防禦力+25</level>
+            </skill>
+            <skill name="核心飛舞" icon="icons/技能/核心飛舞.png" col="2" level="1" mp="100" cd="5">
+                <level>物理攻擊力70%</level>
+                <level>物理攻擊力84%</level>
+                <level></level>
+                <level></level>
+                <level>物理攻擊力133%</level>
+            </skill>
+            <skill name="隱身" icon="icons/技能/隱身.png" col="4" level="1" mp="35" >
+                <level>隱藏自己使敵人看不見3秒</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="5">
+            <skill name="初級物理防禦修練" icon="icons/技能/初級物理防禦修練.png" col="1">
+                <level>物裡防禦力+5</level>
+                <level>物裡防禦力+10</level>
+                <level>物裡防禦力+15</level>
+                <level>物裡防禦力+20</level>
+                <level>物裡防禦力+25</level>
+            </skill>
+            <skill name="女王侍者" icon="icons/技能/女王侍者.png" col="3" mp="70" cd="5">
+                <level>HP11%，物理攻擊力70%，魔法攻擊力70%，物理防禦力70%，魔法防禦力56%)</level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="10">
+            <skill name="初級魔力修練" icon="icons/技能/初級魔力修練.png" pre="初級魔法防禦修練" col="0">
+                <level>魔法攻擊力+15</level>
+                <level>魔法攻擊力+30</level>
+                <level>魔法攻擊力+45</level>
+                <level>魔法攻擊力+60</level>
+                <level>魔法攻擊力+75</level>
+            </skill>
+            <skill name="電磁風暴" icon="icons/技能/電磁風暴.png" col="2" mp="200" cd="10">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level>魔法攻擊的188%*2+魔法攻擊173%*N</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="15">
+            <skill name="初級腕力修練" icon="icons/技能/初級腕力修練.png" pre="初級物理防禦修練" col="1">
+                <level>物理攻擊力+15</level>
+                <level>物理攻擊力+30</level>
+                <level>物理攻擊力+45</level>
+                <level>物理攻擊力+60</level>
+                <level>物理攻擊力+75</level>
+            </skill>
+            <skill name="法力光環" icon="icons/技能/法力光環.png" col="0" mp="70" cd="10">
+                <level>魔法攻擊力+20%，持續時間25秒</level>
+                <level>魔法攻擊力+20%，持續時間30秒</level>
+                <level>魔法攻擊力+20%，持續時間35秒</level>
+                <level>魔法攻擊力+20%，持續時間40秒</level>
+                <level>魔法攻擊力+20%，持續時間45秒</level>
+            </skill>
+            <skill name="女王武士" icon="icons/技能/女王武士.png" pre="女王侍者" col="3" mp="200" cd="10">
+                <level>物理攻擊力100.8%*N+魔法攻擊力112%*N</level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="20">
+            <skill name="護盾光環" icon="icons/技能/護盾光環.png" col="1" mp="70" cd="10">
+                <level>物理和魔法防禦力+40%，持續25秒</level>
+                <level>物理和魔法防禦力+40%，持續30秒</level>
+                <level>物理和魔法防禦力+40%，持續35秒</level>
+                <level>物理和魔法防禦力+40%，持續40秒</level>
+                <level>物理和魔法防禦力+40%，持續45秒</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="25">
+            <skill name="鼓舞光環" icon="icons/技能/鼓舞光環.png" col="1" mp="70" cd="10">
+                <level>物理攻擊力+20%，持續25秒</level>
+                <level>物理攻擊力+20%，持續30秒</level>
+                <level>物理攻擊力+20%，持續35秒</level>
+                <level>物理攻擊力+20%，持續40秒</level>
+                <level>物理攻擊力+20%，持續45秒</level>
+            </skill>
+            <skill name="隱身強化" icon="icons/技能/隱身強化.png" pre="隱身" col="4">
+                <level>持續時間增加0.5秒</level>
+                <level>持續時間增加1秒</level>
+                <level>持續時間增加1.5秒</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="30">
+            <skill name="電磁黑洞" icon="icons/技能/電磁黑洞.png" pre="電磁風暴" col="2" mp="300" cd="30">
+                <level>魔法攻擊力910%(覺醒時)魔法攻擊力55%*N+魔法攻擊力378%</level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level>魔法攻擊力1729%(覺醒時)魔法攻擊力104%*N+魔法攻擊力718%</level>
+            </skill>
+            <skill name="女王護衛" icon="icons/技能/女王護衛.png" col="3" mp="300" cd="30">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level>魔法攻擊力400%*N</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="35">
+            <skill name="魔力轉換" icon="icons/技能/魔力轉換.png" col="4" cd="5">
+                <level>HP10%轉換30MP</level>
+                <level>HP11%轉換40MP</level>
+                <level>HP12%轉換50MP</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="40">
+            <skill name="女王屏障" icon="icons/技能/歐貝倫防禦盾C.png" col="2" mp="30" cd="6">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level>魔法攻擊力100%，持續6秒</level>
+            </skill>
+            <skill name="割喉命令" icon="icons/技能/割喉命令.png" col="3" mp="100" cd="7">
+                <level>物理攻擊力126%*N</level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="45">
+            <skill name="中級腕力修練" icon="icons/技能/中級腕力修練.png" col="1">
+                <level>物理攻擊力+30</level>
+                <level>物理攻擊力+60</level>
+                <level>物理攻擊力+90</level>
+                <level>物理攻擊力+120</level>
+                <level>物理攻擊力+150</level>
+            </skill>
+            <skill name="女王的權力" icon="icons/技能/女王的權力.png" col="2">
+                <level>增加納斯德攻擊力2%</level>
+                <level>增加納斯德攻擊力4%</level>
+                <level>增加納斯德攻擊力6%</level>
+                <level>增加納斯德攻擊力8%</level>
+                <level>增加納斯德攻擊力10%</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="50">
+            <skill name="突擊命令" icon="icons/技能/突擊命令.png" col="3" mp="200" cd="10">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level>物理攻擊力272%*N</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="55">
+            <skill name="魔力契約" icon="icons/技能/魔力契約.png" pre="電磁之核強化" col="0" mp="100" cd="10">
+                <level>10秒內魔法攻擊力+30%</level>
+                <level>10秒內魔法攻擊力+35%</level>
+                <level>10秒內魔法攻擊力+40%</level>
+            </skill>
+            <skill name="武神契約" icon="icons/技能/武神契約.png" pre="女王的權力" col="2" mp="100" cd="10">
+                <level>10秒內物理攻擊力+30%</level>
+                <level>10秒內物理攻擊力+35%</level>
+                <level>10秒內物理攻擊力+40%</level>
+                <level>10秒內物理攻擊力+45%</level>
+            </skill>
+            <skill name="電磁之核強化" icon="icons/技能/電磁之核強化.png" col="1">
+                <level>增加電磁之核的射程距離10%</level>
+                <level>增加電磁之核的射程距離20%</level>
+                <level>增加電磁之核的射程距離30%</level>
+                <level>增加電磁之核的射程距離40%</level>
+                <level>增加電磁之核的射程距離50%</level>
+            </skill>
+            <skill name="電磁之核" icon="icons/技能/電磁之核.png" col="4" mp="30">
+                <level>集氣7秒，魔法攻擊力328%*2</level>
+                <level>集氣5秒，魔法攻擊力328%*2</level>
+                <level>集氣3秒，魔法攻擊力328%*2</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="60">
+            <skill name="女王的潛力" icon="icons/技能/女王的潛力.png" col="0">
+                <level>mp最大值+20</level>
+                <level>mp最大值+40</level>
+                <level>mp最大值+60</level>
+                <level>mp最大值+80</level>
+                <level>mp最大值+100</level>
+            </skill>
+            <skill name="次元斬" icon="icons/技能/空間扭曲C.png" col="2" mp="200" cd="10">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="65">
+            <skill name="納斯德之王的審判" icon="icons/技能/天堂之拳C.png" col="2" mp="300" cd="630">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+            <skill name="殺陣命令" icon="icons/技能/殺陣命令.png" col="3" mp="300" cd="30">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+    </job>
+    <job name="拆解師" icon="icons/job/eve2.png">
+        <spLevel sp="0">
+            <skill name="初級魔法防禦修練" icon="icons/技能/初級魔法防禦修練.png" col="0">
+                <level>魔法防禦力+5</level>
+                <level>魔法防禦力+10</level>
+                <level>魔法防禦力+15</level>
+                <level>魔法防禦力+20</level>
+                <level>魔法防禦力+25</level>
+            </skill>
+            <skill name="核心飛舞" icon="icons/技能/核心飛舞.png" col="2" level="1" mp="100" cd="5">
+                <level>物理攻擊力70%</level>
+                <level>物理攻擊力84%</level>
+                <level></level>
+                <level></level>
+                <level>物理攻擊力133%</level>
+            </skill>
+            <skill name="隱身" icon="icons/技能/隱身.png" col="4" level="1" mp="35" >
+                <level>隱藏自己使敵人看不見3秒</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="5">
+            <skill name="初級物理防禦修練" icon="icons/技能/初級物理防禦修練.png" col="1">
+                <level>物裡防禦力+5</level>
+                <level>物裡防禦力+10</level>
+                <level>物裡防禦力+15</level>
+                <level>物裡防禦力+20</level>
+                <level>物裡防禦力+25</level>
+            </skill>
+            <skill name="女王侍者" icon="icons/技能/女王侍者.png" col="3" mp="70" cd="5">
+                <level>HP11%，物理攻擊力70%，魔法攻擊力70%，物理防禦力70%，魔法防禦力56%)</level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="10">
+            <skill name="初級魔力修練" icon="icons/技能/初級魔力修練.png" pre="初級魔法防禦修練" col="0">
+                <level>魔法攻擊力+15</level>
+                <level>魔法攻擊力+30</level>
+                <level>魔法攻擊力+45</level>
+                <level>魔法攻擊力+60</level>
+                <level>魔法攻擊力+75</level>
+            </skill>
+            <skill name="電磁風暴" icon="icons/技能/電磁風暴.png" col="2" mp="200" cd="10">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level>魔法攻擊的188%*2+魔法攻擊173%*N</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="15">
+            <skill name="初級腕力修練" icon="icons/技能/初級腕力修練.png" pre="初級物理防禦修練" col="1">
+                <level>物理攻擊力+15</level>
+                <level>物理攻擊力+30</level>
+                <level>物理攻擊力+45</level>
+                <level>物理攻擊力+60</level>
+                <level>物理攻擊力+75</level>
+            </skill>
+            <skill name="法力光環" icon="icons/技能/法力光環.png" col="0" mp="70" cd="10">
+                <level>魔法攻擊力+20%，持續時間25秒</level>
+                <level>魔法攻擊力+20%，持續時間30秒</level>
+                <level>魔法攻擊力+20%，持續時間35秒</level>
+                <level>魔法攻擊力+20%，持續時間40秒</level>
+                <level>魔法攻擊力+20%，持續時間45秒</level>
+            </skill>
+            <skill name="女王武士" icon="icons/技能/女王武士.png" pre="女王侍者" col="3" mp="200" cd="10">
+                <level>物理攻擊力100.8%*N+魔法攻擊力112%*N</level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="20">
+            <skill name="護盾光環" icon="icons/技能/護盾光環.png" col="1" mp="70" cd="10">
+                <level>物理和魔法防禦力+40%，持續25秒</level>
+                <level>物理和魔法防禦力+40%，持續30秒</level>
+                <level>物理和魔法防禦力+40%，持續35秒</level>
+                <level>物理和魔法防禦力+40%，持續40秒</level>
+                <level>物理和魔法防禦力+40%，持續45秒</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="25">
+            <skill name="鼓舞光環" icon="icons/技能/鼓舞光環.png" col="1" mp="70" cd="10">
+                <level>物理攻擊力+20%，持續25秒</level>
+                <level>物理攻擊力+20%，持續30秒</level>
+                <level>物理攻擊力+20%，持續35秒</level>
+                <level>物理攻擊力+20%，持續40秒</level>
+                <level>物理攻擊力+20%，持續45秒</level>
+            </skill>
+            <skill name="隱身強化" icon="icons/技能/隱身強化.png" pre="隱身" col="4">
+                <level>持續時間增加0.5秒</level>
+                <level>持續時間增加1秒</level>
+                <level>持續時間增加1.5秒</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="30">
+            <skill name="電磁黑洞" icon="icons/技能/電磁黑洞.png" pre="電磁風暴" col="2" mp="300" cd="30">
+                <level>魔法攻擊力910%
+                    (覺醒時)魔法攻擊力55%*N+魔法攻擊力378%</level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level>魔法攻擊力1729%
+                    (覺醒時)魔法攻擊力104%*N+魔法攻擊力718%</level>
+            </skill>
+            <skill name="女王護衛" icon="icons/技能/女王護衛.png" col="3" mp="300" cd="30">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level>魔法攻擊力400%*N</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="35">
+            <skill name="魔力轉換" icon="icons/技能/魔力轉換.png" col="4" cd="5">
+                <level>HP10%轉換30MP</level>
+                <level>HP11%轉換40MP</level>
+                <level>HP12%轉換50MP</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="40">
+            <skill name="電磁飛彈" icon="icons/技能/電磁飛彈.png" col="2" mp="110" cd="5">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level>物理攻擊力532%+魔法攻擊力532%</level>
+            </skill>
+            <skill name="電磁防禦" icon="icons/技能/金屬靈氣C.png" col="3" mp="30" cd="20">
+                <level>魔法攻擊力120%，周圍每0.7秒魔法攻擊力18%持續20秒</level>
+                <level>魔法攻擊力140%，周圍每0.7秒魔法攻擊力21%持續20秒</level>
+                <level>魔法攻擊力160%，周圍每0.7秒魔法攻擊力24%持續20秒</level>
+                <level>魔法攻擊力180%，周圍每0.7秒魔法攻擊力27%持續20秒</level>
+                <level>魔法攻擊力200%，周圍每0.7秒魔法攻擊力30%持續20秒</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="45">
+            <skill name="中級魔力修練" icon="icons/技能/中級魔力修練.png" col="1">
+                <level>魔法攻擊力+30</level>
+                <level>魔法攻擊力+60</level>
+                <level>魔法攻擊力+90</level>
+                <level>魔法攻擊力+120</level>
+                <level>魔法攻擊力+150</level>
+            </skill>
+            <skill name="光環強化" icon="icons/技能/光環強化.png" col="2">
+                <level>光環mp消耗量減少6%，持續時間增加2秒</level>
+                <level>光環mp消耗量減少12%，持續時間增加4秒</level>
+                <level>光環mp消耗量減少18%，持續時間增加6秒</level>
+                <level>光環mp消耗量減少24%，持續時間增加8秒</level>
+                <level>光環mp消耗量減少30%，持續時間增加10秒</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="50">
+            <skill name="女王之鞭" icon="icons/技能/女王之鞭.png" col="2" mp="200" cd="10">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level>物理攻擊力266%*2+魔法攻擊力186%*N</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="55">
+            <skill name="魔力契約" icon="icons/技能/魔力契約.png" pre="中級魔力修練" col="1" mp="100" cd="10">
+                <level>10秒內魔法攻擊力+30%</level>
+                <level>10秒內魔法攻擊力+35%</level>
+                <level>10秒內魔法攻擊力+40%</level>
+                <level>10秒內魔法攻擊力+45%</level>
+            </skill>
+            <skill name="武神契約" icon="icons/技能/武神契約.png" pre="強韌信念" col="2" mp="100" cd="10">
+                <level>10秒內物理攻擊力+30%</level>
+                <level>10秒內物理攻擊力+35%</level>
+                <level>10秒內物理攻擊力+40%</level>
+            </skill>
+            <skill name="強韌信念" icon="icons/技能/強韌信念.png" col="3">
+                <level>物理攻擊力隨著魔法攻擊力提升1%</level>
+                <level>物理攻擊力隨著魔法攻擊力提升2%</level>
+                <level>物理攻擊力隨著魔法攻擊力提升3%</level>
+                <level>物理攻擊力隨著魔法攻擊力提升4%</level>
+                <level>物理攻擊力隨著魔法攻擊力提升5%</level>
+            </skill>
+            <skill name="電磁之核" icon="icons/技能/電磁之核.png" col="4" mp="30">
+                <level>集氣7秒，魔法攻擊力328%*2</level>
+                <level>集氣5秒，魔法攻擊力328%*2</level>
+                <level>集氣3秒，魔法攻擊力328%*2</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="60">
+            <skill name="優雅腳步" icon="icons/技能/優雅腳步.png" col="1">
+                <level>移動速度和跳躍力+1%</level>
+                <level>移動速度和跳躍力+2%</level>
+                <level>移動速度和跳躍力+3%</level>
+                <level>移動速度和跳躍力+4%</level>
+                <level>移動速度和跳躍力+5%</level>
+            </skill>
+            <skill name="能量釋放" icon="icons/技能/鋼鐵飛刃C.png" col="3" mp="200" cd="10">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level>魔法攻擊力154%*12(覺醒時)魔法攻擊力121%*20</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="65">
+            <skill name="女王之翅" icon="icons/技能/女王之翅.png" col="2" mp="300" cd="30">
+                <level></level>
+                <level>魔法攻擊力336%，魔法攻擊力101%強化，持續30秒</level>
+                <level>魔法攻擊力392%，魔法攻擊力118%強化，持續30秒</level>
+                <level></level>
+                <level></level>
+            </skill>
+            <skill name="能量粉碎" icon="icons/技能/能量巨鑽C.png" col="3" mp="300" cd="3z0">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level>魔法攻擊力274%*15+魔法攻擊力169%*N</level>
+            </skill>
+        </spLevel>
+    </job>
+    <job name="魔法騎士" icon="icons/job/elsword2.png">
+        <spLevel sp="0">
+            <skill name="初級物理防禦修練" icon="icons/技能/初級物理防禦修練.png" col="1">
+                <level>物理防禦力+5</level>
+                <level>物理防禦力+10</level>
+                <level>物理防禦力+15</level>
+                <level>物理防禦力+20</level>
+                <level>物理防禦力+25</level>
+            </skill>
+            <skill name="斜劈斬" icon="icons/技能/斜劈斬.png" col="3" level="1" mp="100" cd="5">
+                <level>物裡攻擊力622%</level>
+                <level>物裡攻擊力746%</level>
+                <level>物裡攻擊力870%</level>
+                <level>物裡攻擊力995%</level>
+                <level>物裡攻擊力1181%</level>
+            </skill>
+            <skill name="反擊" icon="icons/技能/反擊.png" col="4" level="1" mp="20">
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="5">
+            <skill name="初級魔法防禦修練" icon="icons/技能/初級魔法防禦修練.png" col="0">
+                <level>魔法防禦力+5</level>
+                <level>魔法防禦力+10</level>
+                <level>魔法防禦力+15</level>
+                <level>魔法防禦力+20</level>
+                <level>魔法防禦力+25</level>
+            </skill>
+            <skill name="怒火燎原" icon="icons/技能/怒火燎原.png" col="3" mp="170" cd="8">
+                <level>物理攻擊力210%*5</level>
+                <level>物理攻擊力252%*5</level>
+                <level>物理攻擊力294%*5</level>
+                <level>物理攻擊力336%*5</level>
+                <level>物理攻擊力399%*5</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="10">
+            <skill name="初級腕力修練" icon="icons/技能/初級腕力修練.png" col="1" pre="初級物理防禦修練">
+                <level>物理攻擊力+15</level>
+                <level>物理攻擊力+30</level>
+                <level>物理攻擊力+45</level>
+                <level>物理攻擊力+60</level>
+                <level>物理攻擊力+75</level>
+            </skill>
+            <skill name="烈焰斬" icon="icons/技能/烈焰斬.png" col="2" mp="200" cd="10">
+                <level>魔法攻擊250%X6(覺醒時是X8)</level>
+                <level>魔法攻擊312%X6(覺醒時是X8)</level>
+                <level>魔法攻擊365%X6(覺醒時是X8)</level>
+                <level>魔法攻擊417%X6(覺醒時是X8)</level>
+                <level>魔法攻擊495%X6(覺醒時是X8)</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="15">
+            <skill name="初級魔力修練" icon="icons/技能/初級魔力修練.png" col="0" pre="初級魔法防禦修練">
+                <level>魔法攻擊力+15</level>
+                <level>魔法攻擊力+30</level>
+                <level>魔法攻擊力+45</level>
+                <level>魔法攻擊力+60</level>
+                <level>魔法攻擊力+75</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="20">
+            <skill name="魔力導言" icon="icons/技能/魔力導言.png" col="0" mp="70" cd="10">
+                <level>魔法攻擊力+20%，持續時間25秒</level>
+                <level>魔法攻擊力+20%，持續時間30秒</level>
+                <level>魔法攻擊力+20%，持續時間35秒</level>
+            </skill>
+            <skill name="大地斬" icon="icons/技能/大地斬.png" col="3" pre="怒火燎原" mp="100" cd="5">
+                <level>物理攻擊力130%*5</level>
+                <level>物理攻擊力155%*5</level>
+                <level>物理攻擊力181%*5</level>
+                <level>物理攻擊力207%*5</level>
+                <level>物理攻擊力246%*5</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="25">
+            <skill name="攻擊導言" icon="icons/技能/攻擊導言.png" col="1" mp="70" cd="10" >
+                <level>物理攻擊力+20%，持續時間25秒</level>
+                <level>物理攻擊力+20%，持續時間30秒</level>
+                <level>物理攻擊力+20%，持續時間35秒</level>
+                ></skill>
+            <skill name="防禦導言" icon="icons/技能/防禦導言.png" col="0" mp="70" cd="10">
+                <level>物理和魔法防禦力+40%，持續時間25秒</level>
+                <level>物理和魔法防禦力+40%，持續時間30秒</level>
+                <level>物理和魔法防禦力+40%，持續時間35秒</level>
+            </skill>
+            <skill name="反擊強化" icon="icons/技能/反擊強化.png" pre="反擊" col="4">
+                <level>20%機率將對手拋到空中</level>
+                <level>40%機率將對手拋到空中</level>
+                <level>60%機率將對手拋到空中</level>
+                <level>80%機率將對手拋到空中</level>
+                <level>100%機率將對手拋到空中</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="30">
+            <skill name="真烈焰斬" icon="icons/技能/真烈焰斬.png" col="2" pre="烈焰斬" mp="300" cd="30">
+                <level>魔法攻擊277%X24</level>
+                <level>魔法攻擊332%X24</level>
+                <level>魔法攻擊388%X24</level>
+                <level>魔法攻擊444%X24</level>
+                <level>魔法攻擊527%X24</level>
+            </skill>
+            <skill name="無限之刃" icon="icons/技能/無限之刃.png" col="3" mp="250" cd="20">
+                <level>物理攻擊147%X7，物理攻擊622%X1(魔法攻擊168%X8)</level>
+                <level>物理攻擊176%X7，物理攻擊746%X1(魔法攻擊202%X8)</level>
+                <level>物理攻擊206%X7，物理攻擊870%X1(魔法攻擊235%X8)</level>
+                <level>物理攻擊235%X7，物理攻擊995%X1(魔法攻擊269%X8)</level>
+                <level>物理攻擊279%X7，物理攻擊1181%X1(魔法攻擊319%X8)</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="35">
+            <skill name="腳踢" icon="icons/技能/腳踢.png" col="4" cd="10">
+                <level>物理攻擊力50%，mp10</level>
+                <level>物理攻擊力50%，mp12</level>
+                <level>物理攻擊力50%，mp14</level>
+                <level>物理攻擊力50%，mp16</level>
+                <level>物理攻擊力50%，mp18</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="40">
+            <skill name="風之痕" icon="icons/技能/風之痕.png" col="2" mp="100" cd="5">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+            <skill name="爆炎殺" icon="icons/技能/大爆殺C.png" col="3" mp="30" cd="6">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="45">
+            <skill name="捕捉機會" icon="icons/技能/捕捉機會.png" col="2">
+                <level>20%機率用X起身反擊不擊倒</level>
+                <level>40%機率用X起身反擊不擊倒</level>
+                <level>60%機率用X起身反擊不擊倒</level>
+                <level>80%機率用X起身反擊不擊倒</level>
+                <level>100%機率用X起身反擊不擊倒</level>
+            </skill>
+            <skill name="中級魔力修練" icon="icons/技能/中級魔力修練.png" col="3">
+                <level>魔法攻擊力+30</level>
+                <level>魔法攻擊力+60</level>
+                <level>魔法攻擊力+90</level>
+                <level>魔法攻擊力+120</level>
+                <level>魔法攻擊力+150</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="50">
+            <skill name="狂野之風" icon="icons/技能/狂野之風.png" col="2" mp="200" cd="10">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="55">
+            <skill name="武神契約" icon="icons/技能/武神契約.png" col="0" mp="100" cd="10">
+                <level>10秒內物理攻擊力+30%</level>
+                <level>10秒內物理攻擊力+35%</level>
+                <level>10秒內物理攻擊力+40%</level>
+            </skill>
+            <skill name="魔力契約" icon="icons/技能/魔力契約.png" pre="中級魔力修練" col="3" mp="100" cd="10">
+                <level>10秒內魔法攻擊力+30%</level>
+                <level>10秒內魔法攻擊力+35%</level>
+                <level>10秒內魔法攻擊力+40%</level>
+            </skill>
+            <skill name="熱火信念" icon="icons/技能/熱火信念.png" col="1">
+                <level>火球攻擊力+5%</level>
+                <level>火球攻擊力+10%</level>
+                <level>火球攻擊力+15%</level>
+                <level>火球攻擊力+20%</level>
+                <level>火球攻擊力+25%</level>
+            </skill>
+            <skill name="霸體" icon="icons/技能/霸體.png" col="4" mp="50" cd="15">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="60">
+            <skill name="強韌信念" icon="icons/技能/強韌信念.png" col="1">
+                <level>物理攻擊力隨著魔法攻擊力增加1%</level>
+                <level>物理攻擊力隨著魔法攻擊力增加2%</level>
+                <level>物理攻擊力隨著魔法攻擊力增加3%</level>
+                <level>物理攻擊力隨著魔法攻擊力增加4%</level>
+                <level>物理攻擊力隨著魔法攻擊力增加5%</level>
+            </skill>
+            <skill name="地獄之門" icon="icons/技能/劍刃閃焰C.png" col="3" mp="200" cd="10">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="65">
+            <skill name="烈刃風暴" icon="icons/技能/烈刃風暴.png" pre="狂野之風" col="2" mp="300" cd="30">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+            <skill name="火鳳昇華" icon="icons/技能/鳳凰昇華C.png" col="3" mp="300" cd="30">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+    </job>
+    <job name="巨劍騎士" icon="icons/job/elsword.png">
+        <spLevel sp="0">
+            <skill name="初級物理防禦修練" icon="icons/技能/初級物理防禦修練.png" col="1">
+                <level>物理防禦力+5</level>
+                <level>物理防禦力+10</level>
+                <level>物理防禦力+15</level>
+                <level>物理防禦力+20</level>
+                <level>物理防禦力+25</level>
+            </skill>
+            <skill name="斜劈斬" icon="icons/技能/斜劈斬.png" col="3" level="1" mp="100" cd="5">
+                <level>物裡攻擊力622%</level>
+                <level>物裡攻擊力746%</level>
+                <level>物裡攻擊力870%</level>
+                <level>物裡攻擊力995%</level>
+                <level>物裡攻擊力1181%</level>
+            </skill>
+            <skill name="反擊" icon="icons/技能/反擊.png" col="4" level="1" mp="20">
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="5">
+            <skill name="初級魔法防禦修練" icon="icons/技能/初級魔法防禦修練.png" col="0">
+                <level>魔法防禦力+5</level>
+                <level>魔法防禦力+10</level>
+                <level>魔法防禦力+15</level>
+                <level>魔法防禦力+20</level>
+                <level>魔法防禦力+25</level>
+            </skill>
+            <skill name="怒火燎原" icon="icons/技能/怒火燎原.png" col="3" mp="170" cd="8">
+                <level>物理攻擊力210%*5</level>
+                <level>物理攻擊力252%*5</level>
+                <level>物理攻擊力294%*5</level>
+                <level>物理攻擊力336%*5</level>
+                <level>物理攻擊力399%*5</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="10">
+            <skill name="初級腕力修練" icon="icons/技能/初級腕力修練.png" col="1" pre="初級物理防禦修練">
+                <level>物理攻擊力+15</level>
+                <level>物理攻擊力+30</level>
+                <level>物理攻擊力+45</level>
+                <level>物理攻擊力+60</level>
+                <level>物理攻擊力+75</level>
+            </skill>
+            <skill name="烈焰斬" icon="icons/技能/烈焰斬.png" col="2" mp="200" cd="10">
+                <level>魔法攻擊250%X6(覺醒時是X8)</level>
+                <level>魔法攻擊312%X6(覺醒時是X8)</level>
+                <level>魔法攻擊365%X6(覺醒時是X8)</level>
+                <level>魔法攻擊417%X6(覺醒時是X8)</level>
+                <level>魔法攻擊495%X6(覺醒時是X8)</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="15">
+            <skill name="初級魔力修練" icon="icons/技能/初級魔力修練.png" col="0" pre="初級魔法防禦修練">
+                <level>魔法攻擊力+15</level>
+                <level>魔法攻擊力+30</level>
+                <level>魔法攻擊力+45</level>
+                <level>魔法攻擊力+60</level>
+                <level>魔法攻擊力+75</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="20">
+            <skill name="魔力導言" icon="icons/技能/魔力導言.png" col="0" mp="70" cd="10">
+                <level>魔法攻擊力+20%，持續時間25秒</level>
+                <level>魔法攻擊力+20%，持續時間30秒</level>
+                <level>魔法攻擊力+20%，持續時間35秒</level>
+            </skill>
+            <skill name="大地斬" icon="icons/技能/大地斬.png" col="3" pre="怒火燎原" mp="100" cd="5">
+                <level>物理攻擊力130%*5</level>
+                <level>物理攻擊力155%*5</level>
+                <level>物理攻擊力181%*5</level>
+                <level>物理攻擊力207%*5</level>
+                <level>物理攻擊力246%*5</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="25">
+            <skill name="攻擊導言" icon="icons/技能/攻擊導言.png" col="1" mp="70" cd="10" >
+                <level>物理攻擊力+20%，持續時間25秒</level>
+                <level>物理攻擊力+20%，持續時間30秒</level>
+                <level>物理攻擊力+20%，持續時間35秒</level>
+                ></skill>
+            <skill name="防禦導言" icon="icons/技能/防禦導言.png" col="0" mp="70" cd="10">
+                <level>物理和魔法防禦力+40%，持續時間25秒</level>
+                <level>物理和魔法防禦力+40%，持續時間30秒</level>
+                <level>物理和魔法防禦力+40%，持續時間35秒</level>
+            </skill>
+            <skill name="反擊強化" icon="icons/技能/反擊強化.png" pre="反擊" col="4">
+                <level>20%機率將對手拋到空中</level>
+                <level>40%機率將對手拋到空中</level>
+                <level>60%機率將對手拋到空中</level>
+                <level>80%機率將對手拋到空中</level>
+                <level>100%機率將對手拋到空中</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="30">
+            <skill name="真烈焰斬" icon="icons/技能/真烈焰斬.png" col="2" pre="烈焰斬" mp="300" cd="30">
+                <level>魔法攻擊277%X24</level>
+                <level>魔法攻擊332%X24</level>
+                <level>魔法攻擊388%X24</level>
+                <level>魔法攻擊444%X24</level>
+                <level>魔法攻擊527%X24</level>
+            </skill>
+            <skill name="無限之刃" icon="icons/技能/無限之刃.png" col="3" mp="250" cd="20">
+                <level>物理攻擊147%X7，物理攻擊622%X1(魔法攻擊168%X8)</level>
+                <level>物理攻擊176%X7，物理攻擊746%X1(魔法攻擊202%X8)</level>
+                <level>物理攻擊206%X7，物理攻擊870%X1(魔法攻擊235%X8)</level>
+                <level>物理攻擊235%X7，物理攻擊995%X1(魔法攻擊269%X8)</level>
+                <level>物理攻擊279%X7，物理攻擊1181%X1(魔法攻擊319%X8)</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="35">
+            <skill name="腳踢" icon="icons/技能/腳踢.png" col="4" cd="10">
+                <level>物理攻擊力50%，mp10</level>
+                <level>物理攻擊力50%，mp12</level>
+                <level>物理攻擊力50%，mp14</level>
+                <level>物理攻擊力50%，mp16</level>
+                <level>物理攻擊力50%，mp18</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="40">
+            <skill name="防禦破壞" icon="icons/技能/裝甲破壞C.png" col="2" mp="30" cd="10">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+            <skill name="升龍斬" icon="icons/技能/升龍斬.png" col="3" mp="100" cd="5">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="45">
+            <skill name="中級腕力修練" icon="icons/技能/中級腕力修練.png" col="1">
+                <level>物理攻擊力+30</level>
+                <level>物理攻擊力+60</level>
+                <level>物理攻擊力+90</level>
+                <level>物理攻擊力+120</level>
+                <level>物理攻擊力+150</level>
+            </skill>
+            <skill name="捕捉機會" icon="icons/技能/捕捉機會.png" col="2">
+                <level>20%機率用X起身反擊不擊倒</level>
+                <level>40%機率用X起身反擊不擊倒</level>
+                <level>60%機率用X起身反擊不擊倒</level>
+                <level>80%機率用X起身反擊不擊倒</level>
+                <level>100%機率用X起身反擊不擊倒</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="50">
+            <skill name="致命螺旋" icon="icons/技能/致命螺旋.png" col="3" mp="180" cd="8">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="55">
+            <skill name="武神契約" icon="icons/技能/武神契約.png" pre="中級腕力修練" col="1" mp="100" cd="10">
+                <level>10秒內物理攻擊力+30%</level>
+                <level>10秒內物理攻擊力+35%</level>
+                <level>10秒內物理攻擊力+40%</level>
+                <level>10秒內物理攻擊力+45%</level>
+            </skill>
+            <skill name="活力" icon="icons/技能/活力.png" col="2">
+                <level>攻擊時魔力獲得量+3%</level>
+                <level>攻擊時魔力獲得量+6%</level>
+                <level>攻擊時魔力獲得量+9%</level>
+                <level>攻擊時魔力獲得量+12%</level>
+                <level>攻擊時魔力獲得量+15%</level>
+            </skill>
+            <skill name="霸體" icon="icons/技能/霸體.png" col="4" mp="50" cd="15">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="60">
+            <skill name="強化體力" icon="icons/技能/強化體力.png" col="1">
+                <level>角色基本HP+2%</level>
+                <level>角色基本HP+4%</level>
+                <level>角色基本HP+6%</level>
+                <level>角色基本HP+8%</level>
+                <level>角色基本HP+10%</level>
+            </skill>
+            <skill name="龍卷斬" icon="icons/技能/風之旋刃C.png" col="2" mp="200" cd="10">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="65">
+            <skill name="彗星爆裂" icon="icons/技能/雙重衝擊C.png" col="2" mp="300" cd="30">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+            <skill name="末日誓言" icon="icons/技能/末日誓言.png" col="3" mp="300" cd="30">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+    </job>
+    <job name="狂心武者" icon="icons/job/raven2.png">
+        <spLevel sp="0">
+            <skill name="初級物理防禦修練" icon="icons/技能/初級物理防禦修練.png" col="1">
+                <level>物理防禦力+5</level>
+                <level>物理防禦力+10</level>
+                <level>物理防禦力+15</level>
+                <level>物理防禦力+20</level>
+                <level>物理防禦力+25</level>
+            </skill>
+            <skill name="螺旋之手" icon="icons/技能/螺旋之手.png" col="2" level="1" mp="100" cd="5">
+                <level>魔法攻擊 70%X6</level>
+                <level>魔法攻擊 84%X6</level>
+                <level>魔法攻擊 99%X6</level>
+                <level>魔法攻擊 115%X6</level>
+                <level>魔法攻擊 133%X6</level>
+            </skill>
+            <skill name="燃燒列車" icon="icons/技能/燃燒列車.png" col="4" level="1" mp="10">
+                <level>物理攻擊力200%往前推進，每秒消耗40mp</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="5">
+            <skill name="初級魔法防禦修練" icon="icons/技能/初級魔法防禦修練.png" col="0">
+                <level>魔法防禦力+5</level>
+                <level>魔法防禦力+10</level>
+                <level>魔法防禦力+15</level>
+                <level>魔法防禦力+20</level>
+                <level>魔法防禦力+25</level>
+            </skill>
+            <skill name="炸裂之手" icon="icons/技能/炸裂之手.png" col="2" mp="200" cd="10">
+                <level>物理攻擊力210%*5</level>
+                <level>物理攻擊力252%*5</level>
+                <level>物理攻擊力294%*5</level>
+                <level>物理攻擊力336%*5</level>
+                <level>物理攻擊力399%*5</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="10">
+            <skill name="初級腕力修練" icon="icons/技能/初級腕力修練.png" col="1" pre="初級物理防禦修練">
+                <level>物理攻擊力+15</level>
+                <level>物理攻擊力+30</level>
+                <level>物理攻擊力+45</level>
+                <level>物理攻擊力+60</level>
+                <level>物理攻擊力+75</level>
+            </skill>
+            <skill name="爆衝之力" icon="icons/技能/爆衝之力.png" col="3" mp="200" cd="10">
+                <level>非常快速突進，造成物理攻擊力 210%連續攻擊，強硬的速度跟力量將目標推走</level>
+                <level>非常快速突進，造成物理攻擊力 252%連續攻擊，強硬的速度跟力量將目標推走</level>
+                <level>非常快速突進，造成物理攻擊力 299%連續攻擊，強硬的速度跟力量將目標推走</level>
+                <level>非常快速突進，造成物理攻擊力 351%連續攻擊，強硬的速度跟力量將目標推走</level>
+                <level>非常快速突進，造成物理攻擊力 399%連續攻擊，強硬的速度跟力量將目標推走</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="15">
+            <skill name="初級魔力修練" icon="icons/技能/初級魔力修練.png" col="0" pre="初級魔法防禦修練">
+                <level>魔法攻擊力+15</level>
+                <level>魔法攻擊力+30</level>
+                <level>魔法攻擊力+45</level>
+                <level>魔法攻擊力+60</level>
+                <level>魔法攻擊力+75</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="20">
+            <skill name="魔力導言" icon="icons/技能/魔力導言.png" col="0" mp="70" cd="10">
+                <level>魔法攻擊力+20%，持續時間25秒</level>
+                <level>魔法攻擊力+20%，持續時間30秒</level>
+                <level>魔法攻擊力+20%，持續時間35秒</level>
+            </skill>
+            <skill name="爆破打擊" icon="icons/技能/爆破打擊.png" col="3" pre="爆衝之力" mp="100" cd="5">
+                <level>物理攻擊力130%*5</level>
+                <level>物理攻擊力155%*5</level>
+                <level>物理攻擊力181%*5</level>
+                <level>物理攻擊力207%*5</level>
+                <level>物理攻擊力246%*5</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="25">
+            <skill name="攻擊導言" icon="icons/技能/攻擊導言.png" col="1" mp="70" cd="10" >
+                <level>物理攻擊力+20%，持續時間25秒</level>
+                <level>物理攻擊力+20%，持續時間30秒</level>
+                <level>物理攻擊力+20%，持續時間35秒</level>
+                ></skill>
+            <skill name="防禦導言" icon="icons/技能/防禦導言.png" col="0" mp="70" cd="10">
+                <level>物理和魔法防禦力+40%，持續時間25秒</level>
+                <level>物理和魔法防禦力+40%，持續時間30秒</level>
+                <level>物理和魔法防禦力+40%，持續時間35秒</level>
+            </skill>
+            <skill name="捕捉機會" icon="icons/技能/捕捉機會.png" col="4">
+                <level>20%機率用X起身反擊不擊倒</level>
+                <level>40%機率用X起身反擊不擊倒</level>
+                <level>60%機率用X起身反擊不擊倒</level>
+                <level>80%機率用X起身反擊不擊倒</level>
+                <level>100%機率用X起身反擊不擊倒</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="30">
+            <skill name="七炎爆" icon="icons/技能/七炎爆.png" col="2" pre="炸裂之手" mp="300" cd="30">
+                <level>魔法攻擊力 154%X6 + 魔法攻擊 278%</level>
+                <level>魔法攻擊力 188%X6 + 魔法攻擊 344%</level>
+                <level>魔法攻擊力 226%X6 + 魔法攻擊 409%</level>
+                <level>魔法攻擊力 260%X6 + 魔法攻擊 475%</level>
+                <level>魔法攻擊力 293%X6 + 魔法攻擊 545%</level>
+            </skill>
+            <skill name="殺戮武裝" icon="icons/技能/殺戮武裝.png" col="3" mp="270" cd="25">
+                <level>利用劍和納斯德手臂的組合攻擊，造成物理攻擊力的 105%傷害，納斯德手臂引爆火焰魔法攻擊力的 126%連續攻擊作為結束</level>
+				<level>利用劍和納斯德手臂的組合攻擊，造成物理攻擊力的 123%傷害，納斯德手臂引爆火焰魔法攻擊力的 154%連續攻擊作為結束</level>
+				<level>利用劍和納斯德手臂的組合攻擊，造成物理攻擊力的 146%傷害，納斯德手臂引爆火焰魔法攻擊力的 182%連續攻擊作為結束</level>
+				<level>利用劍和納斯德手臂的組合攻擊，造成物理攻擊力的 171%傷害，納斯德手臂引爆火焰魔法攻擊力的 210%連續攻擊作為結束</level>
+				<level>利用劍和納斯德手臂的組合攻擊，造成物理攻擊力的 200%傷害，納斯德手臂引爆火焰魔法攻擊力的 239%連續攻擊作為結束</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="35">
+            <skill name="暗影步伐" icon="icons/技能/暗影步伐.png" col="4" mp="30" cd="5">
+                <level>化成影子前進3公尺，消耗mp50</level>
+                <level>化成影子前進3公尺，消耗mp40</level>
+                <level>化成影子前進4公尺，消耗mp40</level>
+                <level>化成影子前進4公尺，消耗mp30</level>
+                <level>化成影子前進5公尺，消耗mp30</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="40">
+            <skill name="鋼鐵壁壘" icon="icons/技能/鋼鐵壁壘.png" col="2" mp="100" cd="5">
+                <level>物理攻擊力70%，並使敵人出血無法奔跑</level>
+                <level>物理攻擊力90%，並使敵人出血無法奔跑</level>
+                <level>物理攻擊力110%，並使敵人出血無法奔跑</level>
+                <level>物理攻擊力130%，並使敵人出血無法奔跑</level>
+                <level>物理攻擊力150%，並使敵人出血無法奔跑</level>
+            </skill>
+            <skill name="摧毀" icon="icons/技能/武器破壞C.png" col="3" mp="30" cd="10">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="45">
+            <skill name="中級魔力修練" icon="icons/技能/中級魔力修練.png" col="3">
+                <level>魔法攻擊力+30</level>
+                <level>魔法攻擊力+60</level>
+                <level>魔法攻擊力+90</level>
+                <level>魔法攻擊力+120</level>
+                <level>魔法攻擊力+150</level>
+            </skill>
+            <skill name="好勝之心" icon="icons/技能/好勝之心.png" col="2">
+                <level>所有攻擊擊倒值減少4%</level>
+                <level>所有攻擊擊倒值減少8%</level>
+                <level>所有攻擊擊倒值減少12%</level>
+                <level>所有攻擊擊倒值減少16%</level>
+                <level>所有攻擊擊倒值減少20%</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="50">
+            <skill name="黑暗方舟" icon="icons/技能/黑暗方舟.png" col="2" mp="170" cd="8">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="55">
+            <skill name="武神契約" icon="icons/技能/武神契約.png" col="0" mp="100" cd="10">
+                <level>10秒內物理攻擊力+30%</level>
+                <level>10秒內物理攻擊力+35%</level>
+                <level>10秒內物理攻擊力+40%</level>
+            </skill>
+            <skill name="魔力契約" icon="icons/技能/魔力契約.png" pre="中級魔力修練" col="3" mp="100" cd="10">
+                <level>10秒內魔法攻擊力+30%</level>
+                <level>10秒內魔法攻擊力+35%</level>
+                <level>10秒內魔法攻擊力+40%</level>
+            </skill>
+            <skill name="強韌信念" icon="icons/技能/強韌信念.png" col="1">
+                <level>物理攻擊力隨著魔法攻擊力提升1%</level>
+                <level>物理攻擊力隨著魔法攻擊力提升2%</level>
+                <level>物理攻擊力隨著魔法攻擊力提升3%</level>
+                <level>物理攻擊力隨著魔法攻擊力提升4%</level>
+                <level>物理攻擊力隨著魔法攻擊力提升5%</level>
+            </skill>
+            <skill name="暗影軌跡" icon="icons/技能/暗影軌跡.png" pre="暗影步伐" col="4" mp="10">
+                <level>物理攻擊力300%</level>
+                <level>物理攻擊力325%</level>
+                <level>物理攻擊力350%</level>
+                <level>物理攻擊力375%</level>
+                <level>物理攻擊力400%</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="60">
+            <skill name="逆轉勇士" icon="icons/技能/逆轉勇士.png" col="2">
+                <level>HP低於20%時，攻擊力+4%</level>
+                <level>HP低於20%時，攻擊力+8%</level>
+                <level>HP低於20%時，攻擊力+12%</level>
+                <level>HP低於20%時，攻擊力+16%</level>
+                <level>HP低於20%時，攻擊力+20%</level>
+            </skill>
+            <skill name="死亡轟炸" icon="icons/技能/女武神之槍C.png" col="3" mp="200" cd="10">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="65">
+            <skill name="核子爆破" icon="icons/技能/核爆C.png" col="3" mp="300" cd="30">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+            <skill name="靈魂嘶吼" icon="icons/技能/靈魂嘶吼.png" col="2" mp="300" cd="30">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+    </job>
+    <job name="烈刃武者" icon="icons/job/raven.png">
+        <spLevel sp="0">
+            <skill name="初級物理防禦修練" icon="icons/技能/初級物理防禦修練.png" col="1">
+                <level>物理防禦力+5</level>
+                <level>物理防禦力+10</level>
+                <level>物理防禦力+15</level>
+                <level>物理防禦力+20</level>
+                <level>物理防禦力+25</level>
+            </skill>
+            <skill name="螺旋之手" icon="icons/技能/螺旋之手.png" col="2" level="1" mp="100" cd="5">
+                <level>魔法攻擊 70%X6</level>
+                <level>魔法攻擊 84%X6</level>
+                <level>魔法攻擊 99%X6</level>
+                <level>魔法攻擊 115%X6</level>
+                <level>魔法攻擊 133%X6</level>
+            </skill>
+            <skill name="燃燒列車" icon="icons/技能/燃燒列車.png" col="4" level="1" mp="10">
+                <level>物理攻擊力200%往前推進，每秒消耗40mp</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="5">
+            <skill name="初級魔法防禦修練" icon="icons/技能/初級魔法防禦修練.png" col="0">
+                <level>魔法防禦力+5</level>
+                <level>魔法防禦力+10</level>
+                <level>魔法防禦力+15</level>
+                <level>魔法防禦力+20</level>
+                <level>魔法防禦力+25</level>
+            </skill>
+            <skill name="炸裂之手" icon="icons/技能/炸裂之手.png" col="2" mp="200" cd="10">
+                <level>物理攻擊力210%*5</level>
+                <level>物理攻擊力252%*5</level>
+                <level>物理攻擊力294%*5</level>
+                <level>物理攻擊力336%*5</level>
+                <level>物理攻擊力399%*5</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="10">
+            <skill name="初級腕力修練" icon="icons/技能/初級腕力修練.png" col="1" pre="初級物理防禦修練">
+                <level>物理攻擊力+15</level>
+                <level>物理攻擊力+30</level>
+                <level>物理攻擊力+45</level>
+                <level>物理攻擊力+60</level>
+                <level>物理攻擊力+75</level>
+            </skill>
+            <skill name="爆衝之力" icon="icons/技能/爆衝之力.png" col="3" mp="200" cd="10">
+                <level>非常快速突進，造成物理攻擊力 210%連續攻擊，強硬的速度跟力量將目標推走</level>
+                <level>非常快速突進，造成物理攻擊力 252%連續攻擊，強硬的速度跟力量將目標推走</level>
+                <level>非常快速突進，造成物理攻擊力 299%連續攻擊，強硬的速度跟力量將目標推走</level>
+                <level>非常快速突進，造成物理攻擊力 351%連續攻擊，強硬的速度跟力量將目標推走</level>
+                <level>非常快速突進，造成物理攻擊力 399%連續攻擊，強硬的速度跟力量將目標推走</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="15">
+            <skill name="初級魔力修練" icon="icons/技能/初級魔力修練.png" col="0" pre="初級魔法防禦修練">
+                <level>魔法攻擊力+15</level>
+                <level>魔法攻擊力+30</level>
+                <level>魔法攻擊力+45</level>
+                <level>魔法攻擊力+60</level>
+                <level>魔法攻擊力+75</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="20">
+            <skill name="魔力導言" icon="icons/技能/魔力導言.png" col="0" mp="70" cd="10">
+                <level>魔法攻擊力+20%，持續時間25秒</level>
+                <level>魔法攻擊力+20%，持續時間30秒</level>
+                <level>魔法攻擊力+20%，持續時間35秒</level>
+            </skill>
+            <skill name="爆破打擊" icon="icons/技能/爆破打擊.png" col="3" pre="爆衝之力" mp="100" cd="5">
+                <level>物理攻擊力130%*5</level>
+                <level>物理攻擊力155%*5</level>
+                <level>物理攻擊力181%*5</level>
+                <level>物理攻擊力207%*5</level>
+                <level>物理攻擊力246%*5</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="25">
+            <skill name="攻擊導言" icon="icons/技能/攻擊導言.png" col="1" mp="70" cd="10" >
+                <level>物理攻擊力+20%，持續時間25秒</level>
+                <level>物理攻擊力+20%，持續時間30秒</level>
+                <level>物理攻擊力+20%，持續時間35秒</level>
+                ></skill>
+            <skill name="防禦導言" icon="icons/技能/防禦導言.png" col="0" mp="70" cd="10">
+                <level>物理和魔法防禦力+40%，持續時間25秒</level>
+                <level>物理和魔法防禦力+40%，持續時間30秒</level>
+                <level>物理和魔法防禦力+40%，持續時間35秒</level>
+            </skill>
+            <skill name="捕捉機會" icon="icons/技能/捕捉機會.png" col="4">
+                <level>20%機率用X起身反擊不擊倒</level>
+                <level>40%機率用X起身反擊不擊倒</level>
+                <level>60%機率用X起身反擊不擊倒</level>
+                <level>80%機率用X起身反擊不擊倒</level>
+                <level>100%機率用X起身反擊不擊倒</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="30">
+            <skill name="七炎爆" icon="icons/技能/七炎爆.png" col="2" pre="炸裂之手" mp="300" cd="30">
+                <level>魔法攻擊力 154%X6 + 魔法攻擊 278%</level>
+                <level>魔法攻擊力 188%X6 + 魔法攻擊 344%</level>
+                <level>魔法攻擊力 226%X6 + 魔法攻擊 409%</level>
+                <level>魔法攻擊力 260%X6 + 魔法攻擊 475%</level>
+                <level>魔法攻擊力 293%X6 + 魔法攻擊 545%</level>
+            </skill>
+            <skill name="殺戮武裝" icon="icons/技能/殺戮武裝.png" col="3" mp="270" cd="25">
+                <level>利用劍和納斯德手臂的組合攻擊，造成物理攻擊力的 105%傷害，納斯德手臂引爆火焰魔法攻擊力的 126%連續攻擊作為結束</level>
+				<level>利用劍和納斯德手臂的組合攻擊，造成物理攻擊力的 123%傷害，納斯德手臂引爆火焰魔法攻擊力的 154%連續攻擊作為結束</level>
+				<level>利用劍和納斯德手臂的組合攻擊，造成物理攻擊力的 146%傷害，納斯德手臂引爆火焰魔法攻擊力的 182%連續攻擊作為結束</level>
+				<level>利用劍和納斯德手臂的組合攻擊，造成物理攻擊力的 171%傷害，納斯德手臂引爆火焰魔法攻擊力的 210%連續攻擊作為結束</level>
+				<level>利用劍和納斯德手臂的組合攻擊，造成物理攻擊力的 200%傷害，納斯德手臂引爆火焰魔法攻擊力的 239%連續攻擊作為結束</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="35">
+            <skill name="暗影步伐" icon="icons/技能/暗影步伐.png" col="4" cd="5">
+                <level>化成影子前進3公尺，消耗mp50</level>
+                <level>化成影子前進3公尺，消耗mp40</level>
+                <level>化成影子前進4公尺，消耗mp40</level>
+                <level>化成影子前進4公尺，消耗mp30</level>
+                <level>化成影子前進5公尺，消耗mp30</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="40">
+            <skill name="斷裂" icon="icons/技能/切割傷口C.png" col="2" mp="30" cd="10">
+                <level>物理攻擊力70%，並使敵人出血無法奔跑</level>
+                <level>物理攻擊力90%，並使敵人出血無法奔跑</level>
+                <level>物理攻擊力110%，並使敵人出血無法奔跑</level>
+                <level>物理攻擊力130%，並使敵人出血無法奔跑</level>
+                <level>物理攻擊力150%，並使敵人出血無法奔跑</level>
+            </skill>
+            <skill name="音速之刃" icon="icons/技能/音速之刃.png" col="3" mp="100" cd="5">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="45">
+            <skill name="中級腕力修練" icon="icons/技能/中級腕力修練.png" col="1">
+                <level>物理攻擊力+30</level>
+                <level>物理攻擊力+60</level>
+                <level>物理攻擊力+90</level>
+                <level>物理攻擊力+120</level>
+                <level>物理攻擊力+150</level>
+            </skill>
+            <skill name="好勝之心" icon="icons/技能/好勝之心.png" col="2">
+                <level>所有攻擊擊倒值減少4%</level>
+                <level>所有攻擊擊倒值減少8%</level>
+                <level>所有攻擊擊倒值減少12%</level>
+                <level>所有攻擊擊倒值減少16%</level>
+                <level>所有攻擊擊倒值減少20%</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="50">
+            <skill name="飛舞之刃" icon="icons/技能/飛舞之刃.png" col="3" mp="200" cd="10">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="55">
+            <skill name="武神契約" icon="icons/技能/武神契約.png" pre="中級腕力修練" col="1" mp="100" cd="10">
+                <level>10秒內物理攻擊力+30%</level>
+                <level>10秒內物理攻擊力+35%</level>
+                <level>10秒內物理攻擊力+40%</level>
+                <level>10秒內物理攻擊力+45%</level>
+            </skill>
+            <skill name="鋼鐵軀體" icon="icons/技能/鋼鐵軀體.png" col="2">
+                <level>受到的所有攻擊傷害減少2%</level>
+                <level>受到的所有攻擊傷害減少4%</level>
+                <level>受到的所有攻擊傷害減少6%</level>
+                <level>受到的所有攻擊傷害減少8%</level>
+                <level>受到的所有攻擊傷害減少10%</level>
+            </skill>
+            <skill name="暗影軌跡" icon="icons/技能/暗影軌跡.png" pre="暗影步伐" col="4" mp="10">
+                <level>物理攻擊力300%</level>
+                <level>物理攻擊力325%</level>
+                <level>物理攻擊力350%</level>
+                <level>物理攻擊力375%</level>
+                <level>物理攻擊力400%</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="60">
+            <skill name="自信強者" icon="icons/技能/自信強者.png" col="1">
+                <level>HP90%以上時，攻擊力+2%</level>
+                <level>HP90%以上時，攻擊力+4%</level>
+                <level>HP90%以上時，攻擊力+6%</level>
+                <level>HP90%以上時，攻擊力+8%</level>
+                <level>HP90%以上時，攻擊力+10%</level>
+            </skill>
+            <skill name="圓月之刃" icon="icons/技能/震盪波斬C.png" col="2" mp="200" cd="10">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+        <spLevel sp="65">
+            <skill name="旋血劍輪" icon="icons/技能/血腥輪刃C.png" col="2" mp="300" cd="30">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+            <skill name="瞬殺之刃" icon="icons/技能/瞬殺之刃.png" col="3" mp="300" cd="30">
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+                <level></level>
+            </skill>
+        </spLevel>
+    </job>
+    <job name="作者" icon="icons/elskill128.png">
+        <spLevel sp="0">
+            <skill name="嘴砲" icon="icons/技能/初級魔法防禦修練.png" col="0" mp="30" cd="0" level="1">
+                <level>發射~</level>
+                <extLevel>超級嘴砲術 (技能戒指測試)</extLevel>
+            </skill>
+            <skill name="複製貼上" icon="icons/技能/初級魔法防禦修練.png" col="1" mp="30" cd="1">
+                <level>右鍵</level>
+                <level>CTRL+C</level>
+                <level>CTRL+V</level>
+                <level>GOOGLE修改版</level>
+                <level>改變數名稱就好了吧?XD</level>
+            </skill>
+            <skill name="衝SP" icon="icons/技能/初級魔法防禦修練.png" col="3" mp="30" cd="1">
+                <level>SP1</level>
+                <level>SP2</level>
+                <level>SP3</level>
+                <level>SP4</level>
+                <level>SP5</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="5">
+            <skill name="光速逃" icon="icons/技能/暗影步伐.png" col="1" mp="30" cd="0">
+                <level>腳底抹油~溜</level>
+                <level>(光速逃</level>
+                <level>(光逃</level>
+            </skill>
+            <skill name="光速逃EX" icon="icons/技能/爆衝之力.png" pre="光速逃" col="3" mp="30" cd="0">
+                <level>(逃</level>
+                <level>一陣風吹過</level>
+                <level>根本沒聲音..</level>
+            </skill>
+            <skill name="無恥射姿Z" icon="icons/技能/射擊態勢.png" col="4" mp="30" cd="0">
+                <level>ZZZ</level>
+                <level>ZZZZ</level>
+                <level>ZZZZZ</level>
+                <level>ZZZZZZ</level>
+                <level>ZZZZZZZ</level>
+            </skill>
+        </spLevel>
+        <spLevel sp="10">
+            <skill name="嘴砲強化" icon="icons/技能/初級魔法防禦修練.png" pre="嘴砲" col="0" mp="30" cd="0">
+                <level>包在我身上</level>
+                <level>那很簡單好嗎!</level>
+                <level>這作業我上星期早寫完了</level>
+				<level>我阿媽都比你快了</level>
+				<level>究極嘴砲發射~~</level>
+            </skill>
+			<skill name="程式召喚" icon="icons/技能/女王侍者.png" col="2" mp="30" cd="0">
+			    <level>召喚應用程式.</level>
+                <level>召喚應用程式..</level>
+                <level>召喚應用程式...</level>
+                <level>召喚應用程式....</level>
+                <level>召喚應用程式.....</level>
+		    </skill>
+        </spLevel>
+		<spLevel sp="15">
+		    <skill name="程式隕石" icon="icons/技能/招喚隕石.png" pre="程式召喚" col="2" mp="30" cd="0">
+			    <level>要先召喚應用程式才能發動程式隕石LV.1</level>
+				<level>要先召喚應用程式才能發動程式隕石LV.2</level>
+				<level>要先召喚應用程式才能發動程式隕石LV.3</level>
+				<level>要先召喚應用程式才能發動程式隕石LV.4</level>
+				<level>要先召喚應用程式才能發動程式隕石LV.5</level>
+			</skill>
+        </spLevel>
+    </job>
+</elskill>

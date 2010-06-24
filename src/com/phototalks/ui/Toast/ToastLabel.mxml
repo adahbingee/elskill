@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx"
+		 visible="false" cornerRadius="8" paddingBottom="8" paddingLeft="8" paddingRight="8" paddingTop="8" filters="{[filter]}" focusEnabled="false"
+		 showEffect="{showEff}" hideEffect="{hideEff}" backgroundColor="#090909" color="#FFFFFF" dropShadowVisible="false" borderVisible="false" backgroundAlpha="0.5">
+	<fx:Declarations>
+		<s:Parallel id="showEff">
+			<s:Fade alphaFrom="0.0" alphaTo="1.0" />
+		</s:Parallel>
+		<s:Parallel id="hideEff">
+			<s:Fade alphaFrom="1.0" alphaTo="0.0" />
+		</s:Parallel>
+		<mx:DropShadowFilter id="filter" distance="0"/>
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			[Bindable]
+			public var text:String = "ToastText";
+		]]>
+	</fx:Script>
+	<s:Label text="{text}" maxWidth="300"/>
+</mx:HBox>
