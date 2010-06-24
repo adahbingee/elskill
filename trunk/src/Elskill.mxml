@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
+					   xmlns:s="library://ns.adobe.com/flex/spark" 
+					   xmlns:mx="library://ns.adobe.com/flex/mx"
+					   xmlns:component="com.phototalks.Elskill.view.component.*"
+					   xmlns:skill="com.phototalks.Elskill.view.component.skill.*"
+					   showStatusBar="false" currentState="character"
+					   width="640" height="480" creationComplete="onCreated(event)"
+					   resize="windowedapplication1_resizeHandler(event)"
+					   maxWidth="640"
+					   maxHeight="{Capabilities.screenResolutionY}">
+	<fx:Script>
+		<![CDATA[
+			import com.phototalks.Elskill.ApplicationFacade;
+			
+			import mx.events.FlexEvent;
+			import mx.events.ResizeEvent;
+			private var app:ApplicationFacade = ApplicationFacade.getInstance();
+			
+			public static const CHARACTER_STATE:String = "character";
+			public static const SKILL_STATE    :String = "skill";
+			
+			protected function onCreated(event:FlexEvent):void
+			{
+				app.startup(this);
+				//center window
+				nativeWindow.x = (Capabilities.screenResolutionX - nativeWindow.width) / 2;
+				nativeWindow.y = (Capabilities.screenResolutionY - nativeWindow.height) / 2;
+			}
+
+			protected function windowedapplication1_resizeHandler(event:ResizeEvent):void
+			{
+				if(skillPanel) skillPanel.height = parent.height - 40;
+			}
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<s:Parallel id="showEff">
+			<s:Fade alphaFrom="0.0" alphaTo="1.0" />
+		</s:Parallel>
+	</fx:Declarations>
+	<fx:Style source="style.css"/>
+
+	<s:states>
+		<s:State name="character" enterState="{showEff.play([characterList]);}"/>
+		<s:State name="skill" enterState="{showEff.play([skillPanel]);}"/>
+	</s:states>
+	
+	<component:CharacterList y="40" id="characterList" visible.character="true" visible.skill="false" width="100%" height="440"/>
+	<skill:SkillPanel y="40" id="skillPanel" visible.character="false" visible.skill="true" width="100%" height="440"/>
+	<component:ElskillControlBar id="controlBar" width="100%" height="40"/>
+	
+</s:WindowedApplication>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Box xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			 xmlns:s="library://ns.adobe.com/flex/spark" 
+			 xmlns:mx="library://ns.adobe.com/flex/mx"
+			 xmlns:component="com.phototalks.Elskill.view.component.*"
+			 horizontalScrollPolicy="off" creationCompleteEffect="{showEff}"
+			 dropShadowVisible="false" cornerRadius="10" borderVisible="true" backgroundColor="#EFEFEF">
+	<fx:Script>
+		<![CDATA[
+			import mx.events.FlexEvent;
+			import mx.managers.PopUpManager;
+			
+			private var _skill:XMLList;
+			
+			[Bindable]
+			private var skillInfo:String = "";
+			
+			[Bindable]
+			public function set skill(value:XMLList):void
+			{
+				_skill = value;
+				setTooltip();
+			}
+			
+			private function setTooltip():void
+			{
+				skillInfo += _skill.@name+" ";
+				skillInfo += "mp: " + int(_skill.@mp) + "   " + "cd: " + int(_skill.@cd) + "\n";
+				if(_skill.attribute("pre").length() != 0)
+				{
+					skillInfo += "前置技能: " + _skill.@pre + "\n";
+				}
+				for(var i:int = 0; i < (_skill.children() as XMLList).length(); i++)
+				{
+					skillInfo += "Lv"+ (i+1) + ": " +_skill.children()[i]+"\n";
+				}
+			}
+			
+			public function get skill():XMLList
+			{
+				return _skill;
+			}
+			
+			protected function button1_clickHandler(event:MouseEvent):void
+			{
+				dispatchEvent(new Event(SkillPanel.SKILL_ADD, true));
+			}
+			
+			
+			protected function button2_clickHandler(event:MouseEvent):void
+			{
+				dispatchEvent(new Event(SkillPanel.SKILL_SUB,true));
+			}
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<s:Parallel id="showEff">
+			<s:Fade alphaFrom="0.0" alphaTo="1.0" />
+		</s:Parallel>
+	</fx:Declarations>
+	
+	<s:VGroup width="100%" height="100%" verticalAlign="middle" horizontalAlign="center">
+		<mx:Image id="image" source="{skill.@icon}" toolTip="{skillInfo}"
+				  maxWidth="40" maxHeight="40"
+				  smoothBitmapContent="true"/>
+		<s:HGroup width="100%" verticalAlign="middle" paddingLeft="2">
+			<s:VGroup>
+				<mx:Button width="15" height="15" icon="@Embed(source='icons/03.png')"
+						   click="button1_clickHandler(event)"/>
+				<mx:Button width="15" height="15" icon="@Embed(source='icons/04.png')"
+						   click="button2_clickHandler(event)"/>
+			</s:VGroup>
+			<s:VGroup>
+				<mx:Label id="skillName" truncateToFit="true" text="{skill.@name}" toolTip="{skill.@name}" width="75"/>
+				<s:Label text="{int(skill.@level)}/{skill.level.length()}" width="70"/>
+			</s:VGroup>
+		</s:HGroup>
+	</s:VGroup>
+</mx:Box>

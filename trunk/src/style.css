@@ -1,0 +1,23 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/mx";
+@namespace component "com.phototalks.Elskill.view.component.*";
+@namespace skill "com.phototalks.Elskill.view.component.skill.*";
+
+global
+{
+	font-family: "新細明體", "Arial";
+}
+
+mx|ToolTip
+{
+	font-size: 12;
+	background-color: #000000;
+	background-alpha: 0.8;
+	color: #ffffff;
+	corner-radius: 5;
+	padding-bottom: 5;
+	padding-left: 5;
+	padding-right: 5;
+	padding-top: 5;
+}

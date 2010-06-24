@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:List xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark" 
+		xmlns:mx="library://ns.adobe.com/flex/mx"
+		itemRenderer="com.phototalks.Elskill.view.component.CharacterItemRenderer"
+		click="{dispatchEvent( new Event(LIST_CLICKED) )}" borderVisible="false">
+	<fx:Script>
+		<![CDATA[
+			import spark.layouts.TileLayout;
+			
+			private static const NAME:String = "CharacterList";
+			public static const LIST_CLICKED:String = NAME+"list clicked";
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<s:Parallel id="hideEff">
+			<s:Fade alphaFrom="1.0" alphaTo="0.0" />
+		</s:Parallel>
+	</fx:Declarations>
+	<s:layout>
+		<s:TileLayout horizontalAlign="center" verticalAlign="top" verticalGap="10"
+					  columnAlign="justifyUsingWidth"
+					  rowAlign="justifyUsingHeight"/>
+	</s:layout>
+</s:List>

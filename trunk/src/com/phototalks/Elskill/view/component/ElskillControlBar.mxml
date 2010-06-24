@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="640" height="40">
+	<fx:Script>
+		<![CDATA[
+			public static const SP_CHANGE:String = "sp change";
+			public static const RESET:String = "reset";
+			public static const EXPORT:String = "export";
+			public static const ABOUT:String = "about";
+			public static const UPDATE:String = "update";
+		]]>
+	</fx:Script>
+	<s:Rect width="100%" height="100%">
+		<s:fill>
+			<s:SolidColor color="#990000"/>
+		</s:fill>
+	</s:Rect>
+	<s:Button x="16" y="9" label="選擇" click="{dispatchEvent(new Event(Elskill.CHARACTER_STATE, true))}" height="21" width="50"/>
+	<s:Button x="75" y="9" label="技能" click="{dispatchEvent(new Event(Elskill.SKILL_STATE, true))}" height="21" width="50"/>
+	<!--<s:Button x="135" y="9" label="匯出" click="{dispatchEvent(new Event(EXPORT, true))}" height="21" width="50"/>-->
+	<mx:PopUpMenuButton id="exportBtn" x="196" y="9" dataProvider="{[{text: '複製文字', value: 'text'},{text: '複製圖片', value: 'image'}]}"
+						itemClick="{dispatchEvent(event)}"
+						labelField="text" width="80"/>
+	<s:Button x="135" y="9" label="重設" click="{dispatchEvent(new Event(RESET, true))}" height="21" width="50"/>
+	<s:Button x="287" y="9" label="關於" click="{dispatchEvent(new Event(ABOUT, true))}" height="21" width="50"/>
+	<s:Button x="347" y="9" label="更新" click="{dispatchEvent(new Event(UPDATE, true))}" height="21" width="50"/>
+	<mx:Spacer width="100%"/>
+	<s:Label id="job" y="14" right="116" color="#FFFFFF" width="80"/>
+	<s:Label id="sp" y="14" right="14" color="#FFFFFF" width="40"/>
+	<s:Label id="lv" y="14" right="65" color="#FFFFFF" width="40"/>
+	
+	<s:filters>
+		<s:DropShadowFilter color="#000000" strength="0.4" blurX="5" blurY="5" distance="2" angle="90"/>
+	</s:filters>
+</s:Group>
