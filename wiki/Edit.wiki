@@ -1,8 +1,9 @@
 #summary 編輯skill.xml
 
-= Introduction =
+= 介紹 =
 
-Add your content here.
+Elskill是一隻xml解析程式，從skill.xml文字檔中讀取既定的資料結構，加上遊戲技能配點邏輯而成。
+本篇文章將會就skill.xml的結構作介紹和教學。
 
 
 = Details =
