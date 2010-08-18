@@ -13,15 +13,32 @@ Elskill是一隻xml解析程式，從skill.xml文字檔中讀取既定的資料�
   * 基本的XML觀念 (如果有撰寫xhtml或html的概念即可)
   * XML文字編輯軟體 (如[http://notepad-plus-plus.org/ notepad++])
   * 一顆熱情的心
+  * 當你試著修改skill.xml並發現程式錯誤當掉時，刪除掉該skill.xml並重啟程式，將會自動上網下載最新版的skill.xml
 
 = 編輯skill.xml =
 
 == <elskill> ==
+
+----
 
 `<elskill>`是skill.xml的根元素，根據XML的標準，一個XML檔案需要並且也只能有一個根元素
 
 與其他XML Tag相同，`<elskill>`必須是成對的，而其他所有標籤都必須要被包含在`<elskill>`標籤之中
 
 <elskill>
+  ...其他元素
+</elskill>
+
+`<elskill>`具有一個date屬性，他表示了這個skill.xml的更新日期
+
+date是相對伺服器上的版本，不建議使用者修改這個數值，因為我要更新時將無法確定你是由哪個版本修改而來
+
+所以一個完整的`<elskill>`應該寫成下面的形式
+
+
+
+
+
+<elskill date="20080818">
   ...其他元素
 </elskill>
