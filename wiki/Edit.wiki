@@ -13,9 +13,13 @@ Elskill是一隻xml解析程式，從skill.xml文字檔中讀取既定的資料�
   * 基本的XML觀念 (如果有撰寫xhtml或html的概念即可)
   * XML文字編輯軟體 (如[http://notepad-plus-plus.org/ notepad++])
   * 一顆熱情的心
-  * 當你試著修改skill.xml並發現程式錯誤當掉時，刪除掉該skill.xml並重啟程式，將會自動上網下載最新版的skill.xml
+  
 
 = 編輯skill.xml =
+
+== 開啟skill.xml ==
+ * skill.xml位於程式的根目錄，一般來說是在C:\Program Files\Elskill
+ * 當你試著修改skill.xml並發現程式錯誤當掉時，刪除掉該skill.xml並重啟程式，將會自動上網下載最新版的skill.xml
 
 -----------------------------------------------------------------
 
