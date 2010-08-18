@@ -79,7 +79,22 @@ name則是描述該職業名稱
 
 == <spLevel> ==
 
-`<spLevel>`表示一個sp等級間距，一般來說是5
+`<spLevel>`是`<job>`下的第一層標籤，表示一個sp等級間距，它有一個必要屬性是sp
+
+sp依照遊戲設定是5sp一個間距，並且第一個`<spLevel>`是從sp = 0開始`<spLevel sp="0">`
+
+現在我們可以把完整的XML寫成下面的形式
+
+<elskill date="20080818">
+    <job icon="icon/myIcon.png" name="MyJob">
+        <spLevel sp="0">
+        </spLevel>
+        <spLevel sp="5">
+        </spLevel>
+    </job>
+</elskill>
+
+代表了我的職業有兩個sp等級間距，分別是0和5，下面我們就可以開始填入想要的技能了
 
 -----------------------------------------------------------------
 
