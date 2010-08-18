@@ -100,7 +100,7 @@ sp依照遊戲設定是5sp一個間距，並且第一個`<spLevel>`是從sp = 0�
 
 == <skill> ==
 
-`<spLevel>`描述一個角色技能，它有幾個必要屬性，分別是*name*、*icon*、*col*
+`<spLevel>`描述一個角色技能，它有幾個必要屬性，分別是 *name* 、 *icon* 、 *col*
 
 也有幾個可選屬性，分別是mp、cd、pre與active，下面會一一敘述這些屬性的功能和作用
 
