@@ -15,3 +15,7 @@ Elskill是一隻xml解析程式，從skill.xml文字檔中讀取既定的資料�
   * 一顆熱情的心
 
 = 編輯skill.xml =
+
+== <elskill> ==
+
+<elskill>是skill.xml的根元素
