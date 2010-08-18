@@ -1,6 +1,7 @@
 #安裝或使用上的常見問題.
 
 = 安裝 =
+ * 如果你下載的是.air版本，請確認你的電腦安裝有[http://get.adobe.com/air/ Adobe Air]
 
 
 = 使用 =
