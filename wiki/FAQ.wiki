@@ -1,4 +1,4 @@
-# 安裝或使用上的常見問題.
+#summary 安裝或使用上的常見問題.
 
 = 安裝 =
  * 如果你下載的是.air版本，請先確認你的電腦安裝有[http://get.adobe.com/air/ Adobe Air]
