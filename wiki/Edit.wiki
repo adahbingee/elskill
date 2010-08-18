@@ -7,9 +7,11 @@ Elskill是一隻xml解析程式，從skill.xml文字檔中讀取既定的資料�
 本篇文章將會就skill.xml的結構作介紹和教學。
 
 
-= Details =
+= 準備 =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+開始編輯skill.xml之前，你可能會需要具備以下的基本知識和軟體:
+  * 基本的XML觀念 (如果有撰寫xhtml或html的概念即可)
+  * XML文字編輯軟體 (如[http://notepad-plus-plus.org/ notepad++])
+  * 一顆熱情的心
+
+= 編輯skill.xml =
