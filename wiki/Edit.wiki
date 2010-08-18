@@ -16,8 +16,12 @@ Elskill是一隻xml解析程式，從skill.xml文字檔中讀取既定的資料�
 
 = 編輯skill.xml =
 
-== elskill ==
+== <elskill> ==
 
-<elskill>是skill.xml的根元素，XML的標準，一個XML檔案需要並且也只能有一個根元素
+`<elskill>`是skill.xml的根元素，根據XML的標準，一個XML檔案需要並且也只能有一個根元素
 
-skill.xml的根元素就是`<elskill>`
+與其他XML Tag相同，`<elskill>`必須是成對的，而其他所有標籤都必須要被包含在`<elskill>`標籤之中
+
+<elskill>
+  ...其他元素
+</elskill>
