@@ -1,3 +1,5 @@
+# 安裝或使用上的常見問題.
+
 = 安裝 =
  * 如果你下載的是.air版本，請先確認你的電腦安裝有[http://get.adobe.com/air/ Adobe Air]
  * 若是覺得麻煩，直接下載.exe的版本，程式會在執行的時候檢查你的作業系統，並且依需要上網下載最新版的[http://get.adobe.com/air/ Adobe Air]
