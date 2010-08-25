@@ -4,6 +4,8 @@ v1.4.5.2 beta
 
  * 增加判斷鎖技 詳見[http://code.google.com/p/elskill/wiki/Edit Edit]
 
+ * 鎖技圖示尚未加入
+
  * skill.xml 更新(20100825)
 
 v1.4.5.1
