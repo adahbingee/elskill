@@ -1,8 +1,13 @@
 #summary 更新紀錄
 
+v1.4.5.2 beta
+
+ * 增加判斷鎖技 詳見[http://code.google.com/p/elskill/wiki/Edit Edit]
+
  * skill.xml 更新(20100825)
 
 v1.4.5.1
+
  * 改了一點UI
 
  * skill.xml 更新(20100824)
