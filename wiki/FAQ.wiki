@@ -5,7 +5,7 @@
 == 安裝 ==
  * 如果你下載的是.air版本，請先確認你的電腦安裝有[http://get.adobe.com/air/ Adobe Air]
  * 若是覺得麻煩，直接下載.exe的版本，程式會在執行的時候檢查你的作業系統，並且依需要上網下載最新版的[http://get.adobe.com/air/ Adobe Air]
- * 如果安裝時發生目錄錯誤，請刪除刪除C:\Program Files\Elskill\目錄後重新安裝程式
+ * 如果安裝時發生目錄錯誤，請刪除C:\Program Files\Elskill\目錄後重新安裝程式
  * 更新skill.xml後發現部分圖示無法顯示，請下載安裝最新主程式
  * 如果你安裝時使用的是exe安裝檔而非air，將無法使用線上自動更新的功能
 
