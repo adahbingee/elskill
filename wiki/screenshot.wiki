@@ -1,8 +1,0 @@
-#summary 如何抓圖
-
-
-= 如何抓圖 =
-
-在技能畫面點選儲存圖片可以抓圖，最新版已經可以儲存檔案到桌面
-
-[http://elskill.googlecode.com/files/1282841364062skills.png]
