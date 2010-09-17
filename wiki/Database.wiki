@@ -1,6 +1,11 @@
 #summary 技能統計資料庫
 
 = 介紹 =
+
 *Elskill 技能統計資料庫* 是一個線上的技能資料庫，蒐集了各玩家的配點並彙集成資料庫
 
 Elskill程式會在玩家按下匯出按鈕的同時將技能配點送到伺服器，這個資料的擷取是匿名的
+
+= 統計 =
+
+[http://www.phototalks.idv.tw/flex/elskill/show_skills.php 統計網頁]
