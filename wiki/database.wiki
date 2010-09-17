@@ -1,4 +1,0 @@
-#summary 技能統計資料庫
-
-= Elskill 技能統計資料庫 =
-Elskill 
