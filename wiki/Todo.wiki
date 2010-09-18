@@ -6,7 +6,7 @@
 
  * 改進PNG存檔格式(8-bit)與大小
  * 增加自動更新主程式功能(完成)
- * 線上技能資料庫(完成)
+ * [http://code.google.com/p/elskill/wiki/Database 線上技能資料庫](完成)
  * 鎖技圖示(完成)
- * 技能編碼參數，網址連結配點(完成)
+ * [http://code.google.com/p/elskill/wiki/Database 技能編碼參數，網址連結配點](完成)
  * 一次點滿技能(完成)
