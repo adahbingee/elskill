@@ -9,16 +9,27 @@ Elskill程式會在玩家按下匯出按鈕的同時將技能配點送到伺服�
 = 統計 =
 
 [http://www.phototalks.idv.tw/flex/elskill/show_skills.php 全職業統計網頁]
+
 [http://www.phototalks.idv.tw/flex/elskill/show_job.php?job=0 守護者]
+
 [http://www.phototalks.idv.tw/flex/elskill/show_job.php?job=1 風行者]
+
 [http://www.phototalks.idv.tw/flex/elskill/show_job.php?job=2 元素法師]
+
 [http://www.phototalks.idv.tw/flex/elskill/show_job.php?job=3 虛無公主]
+
 [http://www.phototalks.idv.tw/flex/elskill/show_job.php?job=4 創造者]
+
 [http://www.phototalks.idv.tw/flex/elskill/show_job.php?job=5 終結者]
+
 [http://www.phototalks.idv.tw/flex/elskill/show_job.php?job=6 符文殺手]
+
 [http://www.phototalks.idv.tw/flex/elskill/show_job.php?job=7 騎士領主]
+
 [http://www.phototalks.idv.tw/flex/elskill/show_job.php?job=8 末日武者]
+
 [http://www.phototalks.idv.tw/flex/elskill/show_job.php?job=9 狂鋒武者]
+
 
 = 技能編碼 =
 
