@@ -46,6 +46,8 @@ Elskill程式會在玩家按下匯出按鈕的同時將技能配點送到伺服�
 
 [http://www.phototalks.idv.tw/flex/elskill/show_job.php?job=9 狂鋒武者]
 
+[http://www.phototalks.idv.tw/flex/elskill/show_job.php?job=10 澄]
+
 = 分析 =
 
 == 資料擷取與處理 ==
