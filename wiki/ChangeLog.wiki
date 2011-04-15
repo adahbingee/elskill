@@ -2,6 +2,8 @@
 
  * proting to iOS and Android
 
+ [http://www.phototalks.idv.tw/album/albums/userpics/10001/els~0.png]
+
  * skill.xml 更新(20110414.1)
 
  * skill.xml 更新(20110414)
