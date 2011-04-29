@@ -1,4 +1,10 @@
 #summary 更新紀錄
+ 
+v1.5.2 單機與網路更新
+
+ * 由於adobe air sdk版本更新，從1.5.1或更舊版本無法自動更新，請下載安裝更新
+
+ * skill.xml 更新(20110429) 
 
  * proting to iOS and Android
 
