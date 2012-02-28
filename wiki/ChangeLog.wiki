@@ -1,6 +1,8 @@
 #summary 更新紀錄
 
  * 增加icons壓縮檔連結直接下載，方便牆外的玩家下載
+ 
+ * [http://www.phototalks.idv.tw/flex/elskill/pack]
 
 v1.5.10
 
